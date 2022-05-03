@@ -27,6 +27,7 @@ public class DialogScroll : MonoBehaviour
         {
             
             child.gameObject.SetActive(true);
+            
             if(child.childCount > 0)
             { 
                 child = child.GetChild(0);
