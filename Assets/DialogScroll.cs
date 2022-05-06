@@ -7,7 +7,7 @@ public class DialogScroll : MonoBehaviour
 
     public float timer = -1;    
     public Transform child;
-
+    
     private void Awake()
     {
         
@@ -16,6 +16,7 @@ public class DialogScroll : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("start scroll");
         timer = Time.time;
         child = transform.GetChild(0);
     }
@@ -25,6 +26,8 @@ public class DialogScroll : MonoBehaviour
     {
         if(Time.time - timer > 0.5f && timer > 0)
         {
+
+            Debug.Log("start chat");
             
             child.gameObject.SetActive(true);
             
