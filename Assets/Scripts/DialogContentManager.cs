@@ -5,7 +5,7 @@ using UnityEngine;
 public class DialogContentManager : MonoBehaviour
 {
     public float timer = -1;
-    public float delay = 0.5f;
+    public float interval = 0.5f;
     public Transform child;
     public int index = 0;
     public Transform toolBot;
@@ -32,7 +32,7 @@ public class DialogContentManager : MonoBehaviour
     void Update()
     {
         float rnd = Random.Range(0, 0.5f);
-        if (Time.time - timer > (delay + rnd) && timer > 0)
+        if (Time.time - timer > (interval + rnd) && timer > 0)
         {
             if (index == pauseIndex)
             {

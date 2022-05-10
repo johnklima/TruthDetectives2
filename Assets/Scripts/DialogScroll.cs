@@ -7,6 +7,7 @@ public class DialogScroll : MonoBehaviour
 
     public float timer = -1;    
     public Transform child;
+    public float interval = 0.5f;
     
     private void Awake()
     {
@@ -24,7 +25,7 @@ public class DialogScroll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.time - timer > 0.5f && timer > 0)
+        if(Time.time - timer > interval && timer > 0)
         {
 
             Debug.Log("start chat");
