@@ -6,7 +6,7 @@ public class CameraGlobeController : MonoBehaviour
 {
 
     public bool transition = false;
-    public Camera camera;
+    //public Camera camera;
     Quaternion camQ;
     Vector3 camD;
     float t = 0;
@@ -19,6 +19,7 @@ public class CameraGlobeController : MonoBehaviour
     {
         //Vector3(-0.589999974, 0.49000001, -0.469999999)
         //Quaternion(0.0903404206, -0.484166563, 0.702216804, -0.514113724)
+        TransitionCamera();
     }
     //Vector3(0.0430000015,0,3.102)
 
@@ -31,7 +32,7 @@ public class CameraGlobeController : MonoBehaviour
             //Quaternion newrot = Quaternion.Slerp(camQ, goalQs[index], t);
             //transform.rotation = newrot;
             Vector3 newPos = Vector3.Slerp(camD, goalDs[index], t);
-            camera.transform.localPosition = newPos;
+            transform.position = newPos;
             if(t > 1)
             {
                 transition = false;
@@ -44,9 +45,12 @@ public class CameraGlobeController : MonoBehaviour
     {
         index++;
         if (index > goalDs.Length)
+        {
             index = -1;
+        }
+            
 
-        camD = camera.transform.localPosition;
+        camD = transform.position;
        
         t = 0;
         transition = true;
