@@ -44,9 +44,10 @@ public class CameraGlobeController : MonoBehaviour
     public void TransitionCamera()
     {
         index++;
-        if (index > goalDs.Length)
+        if (index > goalDs.Length-1)
         {
             index = -1;
+            return;
         }
             
 
