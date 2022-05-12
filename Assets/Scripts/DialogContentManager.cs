@@ -23,23 +23,31 @@ public class DialogContentManager : MonoBehaviour
         child = transform.GetChild(index);
     }
 
-    public void KickOffTimer()
+    public void KickOffTimer(int pause)
     {
         timer = Time.time;
+        pauseIndex = pause;
     }
-
+    public void SetInterval(float intrv)
+    {
+        interval = intrv;
+    }
     // Update is called once per frame
     void Update()
     {
-        float rnd = Random.Range(0, 0.5f);
+        float rnd = Random.Range(0, interval * 0.5f);
         if (Time.time - timer > (interval + rnd) && timer > 0)
         {
             if (index == pauseIndex)
             {
+                
+                //this happens only occasionally
                 if (toolBot)
                 {
-                    toolBot.gameObject.SetActive(true);                    
+                    toolBot.gameObject.SetActive(true);
+                    toolBot = null;
                 }
+                
 
                 timer = -1; //pause
                 return;
