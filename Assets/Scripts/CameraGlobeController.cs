@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraGlobeController : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class CameraGlobeController : MonoBehaviour
     public Quaternion[] goalQs;
     public Vector3[] goalDs;
     int index = -1;
-
+    Vector2 prevMousePos;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,5 +58,40 @@ public class CameraGlobeController : MonoBehaviour
         transition = true;
         
 
+    }
+    public void Zoom(Slider slider)
+    {
+        //scale 89 to 100 to match camera frustrum -0.89 to -1.0
+        //and simply set the zpos
+        float value = slider.value;
+        Vector3 newPos = transform.position;
+        newPos.z = -value / 100.0f;
+        transform.position = newPos;
+
+    }
+    public void Pan()
+    {
+        Transform rotator = transform.parent;
+        float t = transform.position.z / Time.deltaTime;
+
+        //XY inverted in world space
+        if(prevMousePos.y - Input.mousePosition.y > 0)
+        {
+            rotator.Rotate(Time.deltaTime, 0, 0);
+        }
+        else if(prevMousePos.y - Input.mousePosition.y < 0)
+        {
+            rotator.Rotate(-Time.deltaTime, 0, 0);
+        }
+        if (prevMousePos.x - Input.mousePosition.x > 0)
+        {
+            rotator.Rotate(0, Time.deltaTime, 0);
+        }
+        else if (prevMousePos.x - Input.mousePosition.x < 0)
+        {
+            rotator.Rotate(0, -Time.deltaTime, 0);
+        }
+
+        prevMousePos = Input.mousePosition;
     }
 }
