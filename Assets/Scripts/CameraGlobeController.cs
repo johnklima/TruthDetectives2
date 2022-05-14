@@ -7,14 +7,17 @@ public class CameraGlobeController : MonoBehaviour
 {
 
     public bool transition = false;
+   
     //public Camera camera;
     Quaternion camQ;
     Vector3 camD;
     float t = 0;
-    public Quaternion[] goalQs;
+    public Vector3[] goalEs;
     public Vector3[] goalDs;
     int index = -1;
-    Vector2 prevMousePos;
+    Vector3 prevMousePos;
+    public bool panning;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,15 +33,40 @@ public class CameraGlobeController : MonoBehaviour
         if(transition)
         {
             t += Time.deltaTime;
-            //Quaternion newrot = Quaternion.Slerp(camQ, goalQs[index], t);
+            //Quaternion newrot = Quaternion.Slerp(camQ, goalEs[index], t);
             //transform.rotation = newrot;
             Vector3 newPos = Vector3.Slerp(camD, goalDs[index], t);
-            transform.position = newPos;
+            transform.localPosition = newPos;
+            Quaternion q = new Quaternion();
+            q.eulerAngles = goalEs[index];
+            Quaternion rot = Quaternion.Slerp(camQ, q, t);
+            transform.localRotation = rot;
+
             if(t > 1)
             {
                 transition = false;
 
             }
+        }
+
+        if (panning)
+        {
+            Transform rotator = transform.parent;
+            float t = (1.0f / transform.position.z) / Time.deltaTime;
+
+            Vector3 dir = prevMousePos - Input.mousePosition;
+            //XY inverted in world space
+            float x = dir.x;
+            float y = dir.y;
+
+            dir.x = y;
+            dir.y = x;
+            dir.Normalize();
+
+            rotator.Rotate(dir * Time.deltaTime);
+
+            
+
         }
     }
 
@@ -50,47 +78,49 @@ public class CameraGlobeController : MonoBehaviour
             index = -1;
             return;
         }
-            
 
-        camD = transform.position;
-       
+
+        camD = transform.localPosition;
+        camQ = transform.localRotation;
+
         t = 0;
         transition = true;
         
 
     }
-    public void Zoom(Slider slider)
+    public void TransitionCameraSpecific(int indx)
     {
-        //scale 89 to 100 to match camera frustrum -0.89 to -1.0
-        //and simply set the zpos
-        float value = slider.value;
-        Vector3 newPos = transform.position;
-        newPos.z = -value / 100.0f;
-        transform.position = newPos;
+        
+        if (indx > goalDs.Length - 1)
+        {
+            Debug.Log("Cam transition index out of bounds");
+            return;
+        }
+
+        index = indx;
+
+        camD = transform.localPosition;
+        camQ = transform.localRotation;
+
+        t = 0;
+        transition = true;
+
 
     }
-    public void Pan()
+    public void Zoom(Slider slider)
     {
-        Transform rotator = transform.parent;
-        float t = transform.position.z / Time.deltaTime;
 
-        //XY inverted in world space
-        if(prevMousePos.y - Input.mousePosition.y > 0)
-        {
-            rotator.Rotate(Time.deltaTime, 0, 0);
-        }
-        else if(prevMousePos.y - Input.mousePosition.y < 0)
-        {
-            rotator.Rotate(-Time.deltaTime, 0, 0);
-        }
-        if (prevMousePos.x - Input.mousePosition.x > 0)
-        {
-            rotator.Rotate(0, Time.deltaTime, 0);
-        }
-        else if (prevMousePos.x - Input.mousePosition.x < 0)
-        {
-            rotator.Rotate(0, -Time.deltaTime, 0);
-        }
+        float value = slider.value;
+        Vector3 newPos = transform.position;
+        newPos.z = -value;
+        transform.position = newPos;
+       
+    }
+    public void Pan(bool pan)
+    {
+
+        panning = pan;
+        prevMousePos = Input.mousePosition;
 
         prevMousePos = Input.mousePosition;
     }
