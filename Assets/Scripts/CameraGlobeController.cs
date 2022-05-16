@@ -52,18 +52,43 @@ public class CameraGlobeController : MonoBehaviour
         if (panning)
         {
             Transform rotator = transform.parent;
-            float t = (1.0f / transform.position.z) / Time.deltaTime;
-
+            
             Vector3 dir = prevMousePos - Input.mousePosition;
             //XY inverted in world space
             float x = dir.x;
             float y = dir.y;
-
-            dir.x = y;
+            //fix direction
+            dir.x = -y;
             dir.y = x;
             dir.Normalize();
 
-            rotator.Rotate(dir * Time.deltaTime);
+            float z = Mathf.Abs(transform.position.z);
+
+            
+            //make a quick curve cause i'm too stupid to do the math
+            if (z > 9.8f)
+                z *= 0.2f ;
+            if (z > 9.6f)
+                z *= 0.15f;
+            if (z > 9.4f)
+                z *= 0.1f;
+            if (z > 9.2f)
+                z *= 0.05f;
+            if (z > 9.0f)
+                z *= 0.03f;
+            if (z > 8.8f)
+                z *= 0.01f;
+            if (z > 8.6f)
+                z *= 0.005f;
+            if (z > 8.4f)
+                z *= 0.003f;
+            if (z > 8.2)
+                z *= 0.001f;
+            if (z > 8)
+                z *= 0.0005f;
+            
+            float t =  z * Time.deltaTime ;
+            rotator.Rotate(dir * t );
 
             
 
@@ -122,6 +147,6 @@ public class CameraGlobeController : MonoBehaviour
         panning = pan;
         prevMousePos = Input.mousePosition;
 
-        prevMousePos = Input.mousePosition;
+        
     }
 }
