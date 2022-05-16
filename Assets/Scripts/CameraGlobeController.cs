@@ -67,25 +67,25 @@ public class CameraGlobeController : MonoBehaviour
             
             //make a quick curve cause i'm too stupid to do the math
             if (z > 9.8f)
-                z *= 0.2f ;
+                z *= 0.20f ;
             if (z > 9.6f)
                 z *= 0.15f;
             if (z > 9.4f)
-                z *= 0.1f;
+                z *= 0.10f;
             if (z > 9.2f)
                 z *= 0.05f;
             if (z > 9.0f)
-                z *= 0.03f;
-            if (z > 8.8f)
                 z *= 0.01f;
-            if (z > 8.6f)
+            if (z > 8.8f)
                 z *= 0.005f;
-            if (z > 8.4f)
-                z *= 0.003f;
-            if (z > 8.2)
+            if (z > 8.6f)
                 z *= 0.001f;
-            if (z > 8)
+            if (z > 8.4f)
                 z *= 0.0005f;
+            if (z > 8.2)
+                z *= 0.0001f;
+            if (z > 8)
+                z *= 0.0001f;
             
             float t =  z * Time.deltaTime ;
             rotator.Rotate(dir * t );
@@ -138,6 +138,7 @@ public class CameraGlobeController : MonoBehaviour
         float value = slider.value;
         Vector3 newPos = transform.position;
         newPos.z = -value;
+        
         transform.position = newPos;
        
     }

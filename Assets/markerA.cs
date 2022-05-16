@@ -8,6 +8,7 @@ public class markerA : MonoBehaviour
     public CameraGlobeController cameraGlobeController;
     public GameObject patchEnable;
     public GameObject patchDisable;
+    public GameObject mediaSroll;
     public int camIndex;
     public Slider slider;
     // Start is called before the first frame update
@@ -34,6 +35,7 @@ public class markerA : MonoBehaviour
                     cameraGlobeController.TransitionCameraSpecific(camIndex);
                     patchDisable.SetActive(false);
                     patchEnable.SetActive(true);
+                    mediaSroll.SetActive(false);
                     //this needs to be better resolved
                     slider.value = 9.0f;
 
