@@ -142,6 +142,17 @@ public class CameraGlobeController : MonoBehaviour
 
 
     }
+    public void setGlobeRotation()
+    {
+
+
+
+        //Vector3(354.906921, 0.0339051113, 0.0271844137);
+        Quaternion q = new Quaternion(-0.0197574571f, 0.00206875918f, -2.04931057e-05f, 0.999802649f);
+
+
+        transform.parent.rotation = q;
+    }
     public void Zoom(Slider slider)
     {
 

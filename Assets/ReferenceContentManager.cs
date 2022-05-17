@@ -7,6 +7,9 @@ public class ReferenceContentManager : MonoBehaviour
     public int index;
     public GameObject navTool;
     public GameObject stillFrame;
+    public GameObject locations;
+    public DialogContentManager dialog;
+    public GameObject toolBot;
     public void SetIndex(int indx)
     {
         index = indx;
@@ -21,8 +24,14 @@ public class ReferenceContentManager : MonoBehaviour
             }
             if (count >= transform.childCount)
             {
+                //toolBot.SetActive(true);
                 navTool.SetActive(true);
+                locations.SetActive(true);
                 stillFrame.SetActive(false);
+                
+
+                dialog.KickOffTimer(8);
+
             }
         }
     }

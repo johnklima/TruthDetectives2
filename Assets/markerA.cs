@@ -11,6 +11,7 @@ public class markerA : MonoBehaviour
     public GameObject mediaSroll;
     public int camIndex;
     public Slider slider;
+    public GameObject toolBot;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,9 +34,11 @@ public class markerA : MonoBehaviour
                 if(objectHit.name == "markerHit")
                 {
                     cameraGlobeController.TransitionCameraSpecific(camIndex);
+                    cameraGlobeController.setGlobeRotation(); //todo, params
                     patchDisable.SetActive(false);
                     patchEnable.SetActive(true);
                     mediaSroll.SetActive(false);
+                    toolBot.SetActive(true);
                     //this needs to be better resolved
                     slider.value = 9.0f;
 
