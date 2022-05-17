@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class CameraContoller : MonoBehaviour
 {
@@ -42,6 +43,16 @@ public class CameraContoller : MonoBehaviour
 
     private bool isPlayerMoving;
     private PlayerController playerController;
+
+    public RenderPipelineAsset rpasset;
+    private void Awake()
+    {
+        //set correct quality settings
+
+        QualitySettings.SetQualityLevel(1);
+        QualitySettings.renderPipeline = rpasset;
+
+    }
 
     // Start is called before the first frame update
     void Start()

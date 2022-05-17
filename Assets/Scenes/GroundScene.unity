@@ -747,7 +747,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bd605079028a8cb428d99647c468dcec, type: 2}
+  - {fileID: 2100000, guid: bcfe2a74abc67af4282cb4caf396a421, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1678,6 +1678,7 @@ MonoBehaviour:
   runningCameraSideOffsetSlider: 0
   breathingFrequency: 0
   lockCursor: 1
+  rpasset: {fileID: 11400000, guid: d8302bca0f944d742ac0924db540f17d, type: 2}
 --- !u!33 &7013678626943871790
 MeshFilter:
   m_ObjectHideFlags: 0

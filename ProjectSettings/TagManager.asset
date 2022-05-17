@@ -3,12 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Rotator
+  - Patch
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Patch
   - Water
   - UI
   - 

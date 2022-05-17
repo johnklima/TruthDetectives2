@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 public class CameraGlobeController : MonoBehaviour
 {
@@ -17,6 +18,15 @@ public class CameraGlobeController : MonoBehaviour
     int index = -1;
     Vector3 prevMousePos;
     public bool panning;
+    public RenderPipelineAsset rpasset;
+    private void Awake()
+    {
+        //set correct quality settings
+        
+        QualitySettings.SetQualityLevel(0);
+        QualitySettings.renderPipeline = rpasset;
+
+    }
 
     // Start is called before the first frame update
     void Start()
