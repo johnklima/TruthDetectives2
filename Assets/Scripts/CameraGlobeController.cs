@@ -19,6 +19,7 @@ public class CameraGlobeController : MonoBehaviour
     Vector3 prevMousePos;
     public bool panning;
     public RenderPipelineAsset rpasset;
+    
     private void Awake()
     {
         //set correct quality settings

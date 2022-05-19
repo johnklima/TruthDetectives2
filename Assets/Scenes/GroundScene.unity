@@ -699,7 +699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2034416075
 Transform:
   m_ObjectHideFlags: 0
@@ -747,7 +747,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bcfe2a74abc67af4282cb4caf396a421, type: 2}
+  - {fileID: 2100000, guid: bd605079028a8cb428d99647c468dcec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -966,7 +966,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: bd605079028a8cb428d99647c468dcec, type: 2}
@@ -1165,7 +1165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &2645759188582276559
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1441,7 +1441,7 @@ Transform:
   m_GameObject: {fileID: 2193423312995759476}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 106000, y: 67410, z: 0}
+  m_LocalScale: {x: 106000, y: 67410, z: 1}
   m_Children: []
   m_Father: {fileID: 543450653240332261}
   m_RootOrder: 6
@@ -1677,7 +1677,7 @@ MonoBehaviour:
   runningCameraUpDownOffsetSlider: 0
   runningCameraSideOffsetSlider: 0
   breathingFrequency: 0
-  lockCursor: 1
+  lockCursor: 0
   rpasset: {fileID: 11400000, guid: d8302bca0f944d742ac0924db540f17d, type: 2}
 --- !u!33 &7013678626943871790
 MeshFilter:
