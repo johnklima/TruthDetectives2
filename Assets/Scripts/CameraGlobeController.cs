@@ -71,34 +71,14 @@ public class CameraGlobeController : MonoBehaviour
             //fix direction
             dir.x = -y;
             dir.y = x;
-            dir.Normalize();
+            //dir.Normalize();
 
-            float z = Mathf.Abs(transform.position.z);
-
+            float z = Mathf.Abs(transform.position.z * 100 );
+            //z = Mathf.Sqrt(z);
+            dir *= z;
             
-            //make a quick curve cause i'm too stupid to do the math
-            if (z > 9.8f)
-                z *= 0.20f ;
-            if (z > 9.6f)
-                z *= 0.15f;
-            if (z > 9.4f)
-                z *= 0.10f;
-            if (z > 9.2f)
-                z *= 0.05f;
-            if (z > 9.0f)
-                z *= 0.01f;
-            if (z > 8.8f)
-                z *= 0.005f;
-            if (z > 8.6f)
-                z *= 0.001f;
-            if (z > 8.4f)
-                z *= 0.0005f;
-            if (z > 8.2)
-                z *= 0.0001f;
-            if (z > 8)
-                z *= 0.0001f;
             
-            float t =  z * Time.deltaTime ;
+            float t =   Time.deltaTime * 0.000001f ;
             rotator.Rotate(dir * t );
 
             

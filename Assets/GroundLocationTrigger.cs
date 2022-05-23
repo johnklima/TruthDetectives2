@@ -50,9 +50,9 @@ public class GroundLocationTrigger : MonoBehaviour
 
         if (placed && t < 1)
         {
-            t = 0;
+            
             Camera.main.transform.rotation = Quaternion.Slerp(camQuat, playQuat, t);
-            //t += Time.deltaTime * 0.5f;
+            t += Time.deltaTime * 0.5f;
         }
         else if (placed && t > 1)
         {
@@ -87,8 +87,9 @@ public class GroundLocationTrigger : MonoBehaviour
         {
             Camera.main.transform.rotation = Quaternion.Slerp(playQuat, camQuat, t);
             other.transform.position = Vector3.Lerp(playPos, camPos, t);
-            t = 0.999999f;
-            //t += Time.deltaTime * 0.8f;
+           
+            t += Time.deltaTime * 0.5f;
+
             if(t>1)
             {
               
