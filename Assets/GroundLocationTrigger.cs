@@ -44,11 +44,13 @@ public class GroundLocationTrigger : MonoBehaviour
 
     private void Update()
     {
-
+        //to place the images in design at runtime
+        /*
         camQuat = transform.rotation;
         camPos = transform.position;
+        */
 
-        if (placed && t < 1)
+        if (placed && t < 1 && t > 0)
         {
             
             Camera.main.transform.rotation = Quaternion.Slerp(camQuat, playQuat, t);
@@ -98,9 +100,14 @@ public class GroundLocationTrigger : MonoBehaviour
                 
                 //reset the timer for slerp back
                 placed = true;
-                t = 0; 
+                t = -1; 
             }
 
         }
+    }
+
+    public void resetT()
+    {
+        t = Time.deltaTime;
     }
 }
