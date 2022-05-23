@@ -22,7 +22,8 @@ public class ReferenceContentManager : MonoBehaviour
             {
                 count++;
             }
-            if (count >= transform.childCount)
+            //there is an extra that appears on ground scene
+            if (count >= transform.childCount - 1) 
             {
                 
                 navTool.SetActive(true);
