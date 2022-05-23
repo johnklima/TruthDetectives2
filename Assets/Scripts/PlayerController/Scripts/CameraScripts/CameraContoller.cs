@@ -106,8 +106,7 @@ public class CameraContoller : MonoBehaviour
     }
     public void SetPitchYaw()
     {
-        currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(pitch, yaw), ref rotationSmoothVelocity, 0);
-        transform.eulerAngles = currentRotation;
+        currentRotation = transform.eulerAngles;
     }
 
     void CameraBreathMovement()
