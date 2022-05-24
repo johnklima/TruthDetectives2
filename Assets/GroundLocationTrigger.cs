@@ -12,6 +12,7 @@ public class GroundLocationTrigger : MonoBehaviour
     public float t = -1;
     public bool placed = false;
     public Transform player;
+    public Transform quadPos;
 
     private void Start()
     {
@@ -94,9 +95,17 @@ public class GroundLocationTrigger : MonoBehaviour
 
             if(t>1)
             {
-              
-                //show the sprite
-                transform.GetChild(0).gameObject.SetActive(true);
+                //unchild, move and show the sprite
+                Transform sprt = transform.GetChild(0);
+                Vector3 pos = Camera.main.transform.GetChild(0).position;
+                Quaternion rot = Camera.main.transform.GetChild(0).rotation;
+
+                sprt.SetParent(null);
+                sprt.position = pos;
+                sprt.rotation = rot;
+                sprt.localScale = new Vector3(3.5f, 2.0f, 1.0f);
+                sprt.gameObject.SetActive(true);
+
                 
                 //reset the timer for slerp back
                 placed = true;
