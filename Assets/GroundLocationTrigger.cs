@@ -34,6 +34,8 @@ public class GroundLocationTrigger : MonoBehaviour
             player.GetComponent<PlayerController>().enabled = false;
             player.position = transform.position;
             playPos = player.position;
+            camPos.z = playPos.z;
+
             playQuat = Camera.main.transform.rotation;
 
             // set off the timer
