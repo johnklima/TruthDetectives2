@@ -102,13 +102,20 @@ public class GroundLocationTrigger : MonoBehaviour
                 Vector3 pos = Camera.main.transform.GetChild(0).position;
                 Quaternion rot = Camera.main.transform.GetChild(0).rotation;
 
-                sprt.SetParent(null);
+               
                 sprt.position = pos;
                 sprt.rotation = rot;
-                sprt.localScale = new Vector3(3.5f, 2.0f, 1.0f);
+                
+                
+                
+                //show human
+                transform.GetChild(1).SetParent(null);
+                //detach sprite
+                sprt.SetParent(null);
+                sprt.localScale = new Vector3(1.75f, 1.0f, 1.0f);
+                //use sprite? not sure
                 sprt.gameObject.SetActive(true);
 
-                
                 //reset the timer for slerp back
                 placed = true;
                 t = -1; 
