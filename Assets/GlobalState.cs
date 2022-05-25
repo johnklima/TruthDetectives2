@@ -12,6 +12,8 @@ public class GlobalState : MonoBehaviour
     public GameObject[] showGuis;
     public Image StillFrame;
     public Sprite sprite;
+    public int placedCount = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,11 @@ public class GlobalState : MonoBehaviour
 
     public void loadGround()
     {
+        placedCount++;
+        
+        //have we placed all the buildings?
+        if (placedCount < 4)
+            return;
 
         Destroy(Sat);   
         
