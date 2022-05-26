@@ -31,7 +31,7 @@ public class ReferenceContentManager : MonoBehaviour
                 stillFrame.SetActive(false);
                 enhanceButton.SetActive(false);
 
-                dialog.KickOffTimer(8);
+                dialog.KickOffTimer(7); //find a better way
 
             }
         }
