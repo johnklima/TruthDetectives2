@@ -13,6 +13,7 @@ public class GroundLocationTrigger : MonoBehaviour
     public bool placed = false;
     public Transform player;
     public Transform quadPos;
+    public GlobalState global;
 
     private void Start()
     {
@@ -45,19 +46,23 @@ public class GroundLocationTrigger : MonoBehaviour
 
     }
 
+
+
     private void Update()
     {
-        //to place the images in design at runtime
-        /*
-        camQuat = transform.rotation;
-        camPos = transform.position;
-        */
+        //to place the images in design at runtime       
+        //camQuat = transform.rotation;
+        //camPos = transform.position;
+        
 
-        if (placed && t < 1 && t > 0)
+        if (placed && t <= 1 && t > 0)
         {
             
             Camera.main.transform.rotation = Quaternion.Slerp(camQuat, playQuat, t);
             t += Time.deltaTime * 0.5f;
+
+         
+
         }
         else if (placed && t > 1)
         {
@@ -71,6 +76,8 @@ public class GroundLocationTrigger : MonoBehaviour
 
             //free player movement
             player.GetComponent<PlayerController>().enabled = true;
+            //increment the global placed count to show video
+            global.ShowVideo();
             
             //were done.
             this.enabled = false;
@@ -95,7 +102,10 @@ public class GroundLocationTrigger : MonoBehaviour
            
             t += Time.deltaTime * 0.5f;
 
-            if(t>1)
+            //for placing at runtime design
+            //t = 0.999999f;
+
+            if (t>1)
             {
                 //unchild, move and show the sprite
                 Transform sprt = transform.GetChild(0);
@@ -115,6 +125,7 @@ public class GroundLocationTrigger : MonoBehaviour
                 sprt.localScale = new Vector3(1.75f, 1.0f, 1.0f);
                 //use sprite? not sure
                 sprt.gameObject.SetActive(true);
+
 
                 //reset the timer for slerp back
                 placed = true;

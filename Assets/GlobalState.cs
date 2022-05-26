@@ -13,7 +13,7 @@ public class GlobalState : MonoBehaviour
     public Image StillFrame;
     public Sprite sprite;
     public int placedCount = 0;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -53,5 +53,15 @@ public class GlobalState : MonoBehaviour
 
         SceneManager.LoadSceneAsync("GroundScene", LoadSceneMode.Additive);
 
+    }
+    
+    //for ground level
+    public GameObject videoThumbnail;
+    public int groundCount = 0;
+    public void ShowVideo()
+    {
+        groundCount++;
+        if (groundCount >= 3)
+            videoThumbnail.SetActive(true);
     }
 }

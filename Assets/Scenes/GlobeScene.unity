@@ -312,6 +312,8 @@ MonoBehaviour:
   - {fileID: 409227437}
   - {fileID: 677787932}
   - {fileID: 90391944}
+  - {fileID: 608254287}
+  - {fileID: 1226771569}
   showGuis:
   - {fileID: 1175773782}
   - {fileID: 1672784179}

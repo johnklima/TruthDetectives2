@@ -10,6 +10,8 @@ public class ReferenceContentManager : MonoBehaviour
     public GameObject locations;
     public DialogContentManager dialog;
     public GameObject enhanceButton;
+
+
     public void SetIndex(int indx)
     {
         index = indx;
@@ -36,7 +38,7 @@ public class ReferenceContentManager : MonoBehaviour
             }
         }
     }
-
+ 
     private void Update()
     {
 
