@@ -13,6 +13,8 @@ public class GlobalState : MonoBehaviour
     public Image StillFrame;
     public Sprite sprite;
     public int placedCount = 0;
+    public DialogueCamera dcam;
+
     
     // Start is called before the first frame update
     void Start()
@@ -60,8 +62,14 @@ public class GlobalState : MonoBehaviour
     public int groundCount = 0;
     public void ShowVideo()
     {
+        
         groundCount++;
         if (groundCount >= 3)
             videoThumbnail.SetActive(true);
+    }
+    public void DisableDialogueCamera()
+    {
+        if (dcam)
+            dcam.DisableDialogueCamera();
     }
 }

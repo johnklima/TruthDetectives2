@@ -23,6 +23,8 @@ public class GroundLocationTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        return;
+
         if (placed)
             return;
 
@@ -53,26 +55,20 @@ public class GroundLocationTrigger : MonoBehaviour
         //to place the images in design at runtime       
         //camQuat = transform.rotation;
         //camPos = transform.position;
-        
+        return;
 
         if (placed && t <= 1 && t > 0)
         {
             
             Camera.main.transform.rotation = Quaternion.Slerp(camQuat, playQuat, t);
-            t += Time.deltaTime * 0.5f;
+            t += Time.deltaTime ;
+            
 
-         
 
         }
         else if (placed && t > 1)
         {
-            CameraContoller cc = 
-                Camera.main.transform.GetComponent<CameraContoller>();
-            //cc.pitch = Camera.main.transform.eulerAngles.x;
-            //cc.yaw = Camera.main.transform.eulerAngles.y;
-            //cc.SetPitchYaw();
-
-            cc.lockMovement = false;
+            Camera.main.transform.GetComponent<CameraContoller>().lockMovement = false; 
 
             //free player movement
             player.GetComponent<PlayerController>().enabled = true;
@@ -89,6 +85,9 @@ public class GroundLocationTrigger : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+
+        return;
+
         if (placed)
         {           
             return;
@@ -135,6 +134,40 @@ public class GroundLocationTrigger : MonoBehaviour
         }
     }
 
+    public void setPlaced(DialogueCamera camera)
+    {
+        
+        //unchild, move and show the sprite
+        
+        Vector3 pos = camera.transform.position;
+        Quaternion rot = camera.transform.rotation;
+
+
+        //sprt.position = pos;
+        //sprt.rotation = rot;
+
+
+        //detach human
+        transform.GetChild(1).SetParent(null);
+       
+        //detach sprite        
+        Transform sprt = transform.GetChild(0);
+
+        sprt.SetParent(null);
+        sprt.localScale = new Vector3(1.75f, 1.0f, 1.0f);
+        //use sprite? not sure
+        sprt.gameObject.SetActive(true);
+
+
+        //reset the timer for slerp back
+        placed = true;
+        global.ShowVideo();
+
+        
+        //were done.
+        this.enabled = false;
+
+    }
     public void resetT()
     {
         t = Time.deltaTime;

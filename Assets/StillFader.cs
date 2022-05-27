@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class StillFader : MonoBehaviour
 {
-    public Transform locations;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -31,17 +30,5 @@ public class StillFader : MonoBehaviour
         }
             
     }
-
-    public void resetAllTs()
-    {
-        //just in case
-        if (locations == null)
-            return;
-
-        foreach(Transform child in locations)
-        {
-            child.GetComponent<GroundLocationTrigger>().resetT();
-
-        }
-    }
+ 
 }

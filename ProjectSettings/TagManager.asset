@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Rotator
   - Patch
+  - DialogueCamera
   layers:
   - Default
   - TransparentFX

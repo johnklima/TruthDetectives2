@@ -15,6 +15,8 @@ public static class TranslateHelper
 
 public class DialogueCamera : MonoBehaviour
 {
+    public GlobalState global;
+    public bool Done = false;
 
     [Header("Grab A Reference Of DiaCamera")]
     public GameObject playerDiaCamOBJ = null;
@@ -50,18 +52,22 @@ public class DialogueCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Done)
+            return;
 
         MoveDiaCam(); // Calls the function allowing us to move smoothly
 
 
         if(Input.GetKeyDown(KeyCode.Space)) // Temporary methood to get the player out of dialogue mode, you can call this function however you'd like though!
         {
-            DisableDialogueCamera(); //  <-- Copy this and place it at the end of your dialogue or call it in a different script since its a public function!
+            //DisableDialogueCamera(); //  <-- Copy this and place it at the end of your dialogue or call it in a different script since its a public function!
         }
     }
 
     private void EnableDialogueCamera()
     {
+        if (Done)
+            return;
 
         playerDiaCamOBJ.transform.position = playerCamera.transform.position;
         playerDiaCamOBJ.transform.rotation = playerCamera.transform.rotation;
@@ -74,6 +80,23 @@ public class DialogueCamera : MonoBehaviour
 
     public void DisableDialogueCamera()
     {
+        if (Done)
+            return;
+
+        //detach human
+        transform.GetChild(1).SetParent(null);
+
+        //detach sprite        
+        Transform sprt = transform.GetChild(0);
+
+        sprt.SetParent(null);
+        sprt.localScale = new Vector3(1.75f, 1.0f, 1.0f);
+        //use sprite? not sure
+        sprt.gameObject.SetActive(true);
+
+        //increment placed    
+        global.ShowVideo();
+
         playerDiaCamOBJ.SetActive(false); // disableCamera
         playerDiaCamOBJ.transform.position = new Vector3(0,0,0); // reset Camera.
         playerDiaCamOBJ.transform.rotation = new Quaternion(0,0,0,0); // reset Camera.
@@ -82,11 +105,17 @@ public class DialogueCamera : MonoBehaviour
         playerController.enabled = true;
 
         bInDialogue = false;
+        
+        this.enabled = false; //does not completely disable, why we need a "Done"
+        Done = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (Done)
+            return;
+
+        if (other.gameObject.tag == "Player")
         {
             EnableDialogueCamera();
             bInDialogue = true;
@@ -95,7 +124,10 @@ public class DialogueCamera : MonoBehaviour
 
     private void MoveDiaCam()
     {
-        if(bInDialogue)
+        if (Done)
+            return;
+
+        if (bInDialogue)
         {
             playerDiaCamOBJ.transform.LerpTowards(diaTarget.transform, transitionSpeed * Time.deltaTime); // Here we use the TranslateHelper in order to much cleanly lerp towards the pos and rot.
         }

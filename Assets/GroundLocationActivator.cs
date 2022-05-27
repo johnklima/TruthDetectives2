@@ -8,6 +8,7 @@ public class GroundLocationActivator : MonoBehaviour
 {
     public Transform location;
     public Transform allLocations;
+    public GlobalState global;
     public void showLocation()
     {
         //turn them all off
@@ -15,7 +16,7 @@ public class GroundLocationActivator : MonoBehaviour
         {
             child.gameObject.SetActive(false);
         }
-
+        global.dcam = location.GetComponent<DialogueCamera>();
         location.gameObject.SetActive(true);
     }
 }
