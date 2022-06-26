@@ -25,8 +25,16 @@ public class GlobalState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            placedCount = 5;
+            loadGround();
+        }
 
-        
+
+
     }
 
     public void loadGround()
@@ -53,7 +61,7 @@ public class GlobalState : MonoBehaviour
         StillFrame.sprite = sprite;
         StillFrame.SetNativeSize();
 
-        SceneManager.LoadSceneAsync("GroundScene", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("GroundScene");
 
     }
     
