@@ -61,7 +61,7 @@ public class GlobalState : MonoBehaviour
         StillFrame.sprite = sprite;
         StillFrame.SetNativeSize();
 
-        SceneManager.LoadSceneAsync("GroundScene");
+        SceneManager.LoadSceneAsync("GroundScene",LoadSceneMode.Single);
 
     }
     
