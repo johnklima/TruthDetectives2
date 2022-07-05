@@ -10,6 +10,8 @@ public class ReferenceContentManager : MonoBehaviour
     public GameObject locations;
     public DialogContentManager dialog;
     public GameObject enhanceButton;
+    public MarkerB markB;
+    public markerA markA;
 
 
     public void SetIndex(int indx)
@@ -32,6 +34,8 @@ public class ReferenceContentManager : MonoBehaviour
                 locations.SetActive(true);
                 stillFrame.SetActive(false);
                 enhanceButton.SetActive(false);
+                markA.goodToGo = true;
+                markB.goodToGo = true;
 
                 dialog.KickOffTimer(7); //find a better way
 

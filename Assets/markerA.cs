@@ -12,6 +12,7 @@ public class markerA : MonoBehaviour
     public int camIndex;
     public Slider slider;
     public GameObject toolBot;
+    public bool goodToGo = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,7 @@ public class markerA : MonoBehaviour
             {
                 Transform objectHit = hit.transform;
                 Debug.Log("HIT " + objectHit.name);
-                if(objectHit.name == "markerHitA")
+                if(objectHit.name == "markerHitA" && goodToGo)
                 {
                     cameraGlobeController.TransitionCameraSpecific(camIndex);
                     cameraGlobeController.setGlobeRotation(); //todo, params

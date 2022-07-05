@@ -3709,6 +3709,7 @@ MonoBehaviour:
   camIndex: 2
   slider: {fileID: 1171516652}
   toolBot: {fileID: 1734415482}
+  goodToGo: 0
 --- !u!1 &451028333
 GameObject:
   m_ObjectHideFlags: 0
@@ -5167,6 +5168,8 @@ MonoBehaviour:
   locations: {fileID: 10147277}
   dialog: {fileID: 988046964}
   enhanceButton: {fileID: 64959803}
+  markB: {fileID: 433595675}
+  markA: {fileID: 1869219686}
 --- !u!114 &614783018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13330,6 +13333,7 @@ MonoBehaviour:
   camIndex: 2
   slider: {fileID: 1171516652}
   toolBot: {fileID: 1734415482}
+  goodToGo: 0
 --- !u!64 &1869219687
 MeshCollider:
   m_ObjectHideFlags: 0
