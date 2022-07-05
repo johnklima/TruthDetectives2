@@ -810,7 +810,7 @@ GameObject:
   - component: {fileID: 98758033}
   - component: {fileID: 98758032}
   m_Layer: 0
-  m_Name: markerB
+  m_Name: markerA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3590,9 +3590,9 @@ GameObject:
   - component: {fileID: 433595674}
   - component: {fileID: 433595673}
   - component: {fileID: 433595672}
-  - component: {fileID: 433595671}
+  - component: {fileID: 433595675}
   m_Layer: 0
-  m_Name: markerHit
+  m_Name: markerHitB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3612,25 +3612,6 @@ Transform:
   m_Father: {fileID: 576420791}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &433595671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433595669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d6b553d60e78d14dafbf20bd17d8478, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraGlobeController: {fileID: 1687258583}
-  patchEnable: {fileID: 1243988838}
-  patchDisable: {fileID: 308936150}
-  mediaSroll: {fileID: 1866546360}
-  camIndex: 2
-  slider: {fileID: 1171516652}
-  toolBot: {fileID: 1734415482}
 --- !u!64 &433595672
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3694,6 +3675,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433595669}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &433595675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433595669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f32307cc9590a24e817eb63f6864081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraGlobeController: {fileID: 1687258583}
+  patchEnable: {fileID: 190686353}
+  patchDisable: {fileID: 308936150}
+  mediaSroll: {fileID: 1866546360}
+  camIndex: 2
+  slider: {fileID: 1171516652}
+  toolBot: {fileID: 1734415482}
 --- !u!1 &451028333
 GameObject:
   m_ObjectHideFlags: 0
@@ -4598,6 +4598,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toActivate:
   - {fileID: 10147277}
+  - {fileID: 1866546360}
+  - {fileID: 636840172}
+  - {fileID: 1003852973}
+  - {fileID: 1335534900}
 --- !u!1 &566665961
 GameObject:
   m_ObjectHideFlags: 0
@@ -4730,7 +4734,7 @@ GameObject:
   - component: {fileID: 576420794}
   - component: {fileID: 576420793}
   m_Layer: 0
-  m_Name: markerA
+  m_Name: markerB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6264,7 +6268,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 291115217}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -6321,7 +6325,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -9502,7 +9506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1335534901
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13260,7 +13264,7 @@ GameObject:
   - component: {fileID: 1869219687}
   - component: {fileID: 1869219686}
   m_Layer: 0
-  m_Name: markerHit
+  m_Name: markerHitA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13293,7 +13297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraGlobeController: {fileID: 1687258583}
-  patchEnable: {fileID: 190686353}
+  patchEnable: {fileID: 1243988838}
   patchDisable: {fileID: 308936150}
   mediaSroll: {fileID: 1866546360}
   camIndex: 2

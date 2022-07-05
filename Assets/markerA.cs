@@ -31,7 +31,7 @@ public class markerA : MonoBehaviour
             {
                 Transform objectHit = hit.transform;
                 Debug.Log("HIT " + objectHit.name);
-                if(objectHit.name == "markerHit")
+                if(objectHit.name == "markerHitA")
                 {
                     cameraGlobeController.TransitionCameraSpecific(camIndex);
                     cameraGlobeController.setGlobeRotation(); //todo, params
