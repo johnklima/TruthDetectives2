@@ -22,8 +22,12 @@ public class VideoPlayerContoller : MonoBehaviour
 
     void CheckOver(UnityEngine.Video.VideoPlayer vp)
     {
-        //working for first video onle, need a state;
+        //working for first video only, need a state
+        
         print("Video Is Over");
+
+        return;
+        
         videoPanel.SetActive(false);
         dialogScrollFrame.SetActive(true);
         dialogScroll.SetActive(true);
