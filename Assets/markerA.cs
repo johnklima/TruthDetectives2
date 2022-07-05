@@ -44,9 +44,9 @@ public class markerA : MonoBehaviour
                    
                     slider.minValue = 9.0f;
                     slider.maxValue = 9.3f;
-                    slider.value = 9.3f;
+                    slider.value = 9.25f;
 
-                    slider.Invoke("OnValueChanged", 0);
+                    slider.GetComponent<SliderZoomReturn>().onGround = true;
 
                 }
                
