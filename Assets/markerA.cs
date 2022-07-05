@@ -40,7 +40,12 @@ public class markerA : MonoBehaviour
                     mediaSroll.SetActive(false);
                     toolBot.SetActive(true);
                     //this needs to be better resolved
-                    slider.value = 9.0f;
+                   
+                    slider.minValue = 9.0f;
+                    slider.maxValue = 9.3f;
+                    slider.value = 9.3f;
+
+                    slider.Invoke("OnValueChanged", 0);
 
                 }
                

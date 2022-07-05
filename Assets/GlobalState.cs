@@ -41,8 +41,8 @@ public class GlobalState : MonoBehaviour
     {
         placedCount++;
         
-        //have we placed all the buildings?
-        if (placedCount < 4)
+        //have we placed 3 of 4 buildings?
+        if (placedCount < 3)
             return;
 
         Destroy(Sat);   
