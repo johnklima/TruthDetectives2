@@ -7,7 +7,7 @@ public class SelectedActive : MonoBehaviour
 
     public GameObject[] selectors;
     // Start is called before the first frame update
-    void Start()
+    public void onClick()
     {
         foreach(GameObject obj in selectors)
         {
