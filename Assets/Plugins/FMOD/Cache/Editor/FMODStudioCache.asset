@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: -618427969
     Data4: -1380839016
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -46,7 +46,7 @@ MonoBehaviour:
     Data3: 989138350
     Data4: -1188511613
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -73,7 +73,7 @@ MonoBehaviour:
     Data3: -1030208613
     Data4: 1988143417
   Banks:
-  - {fileID: 2385935357747244433}
+  - {fileID: -7160164198101323064}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -81,7 +81,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 141000
---- !u!114 &-8105511956539515377
+--- !u!114 &-8363155865077296228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,15 +91,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/UI.assets.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/UI.assets.bank
-  Name: UI.assets
-  StudioPath: bank:/UI.assets
-  lastModified: 637926963636849327
+  Path: FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637926970109376272
   FileSizes:
   - Name: Desktop
-    Value: 6019840
+    Value: 4410
   Exists: 1
 --- !u!114 &-7833121157730780573
 MonoBehaviour:
@@ -125,6 +125,26 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-7822873261562231470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.assets.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.assets.bank
+  Name: Master.assets
+  StudioPath: bank:/Master.assets
+  lastModified: 637926970109336381
+  FileSizes:
+  - Name: Desktop
+    Value: 1829856
+  Exists: 1
 --- !u!114 &-7374522780409799952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +169,26 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-7160164198101323064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Atmosphere.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Atmosphere.bank
+  Name: Atmosphere
+  StudioPath: bank:/Atmosphere
+  lastModified: 637926969844661110
+  FileSizes:
+  - Name: Desktop
+    Value: 11816
+  Exists: 1
 --- !u!114 &-7073165277519501275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +208,7 @@ MonoBehaviour:
     Data3: -308508282
     Data4: 109970603
   Banks:
-  - {fileID: -5543284983364034218}
+  - {fileID: 6776495315364235349}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -195,7 +235,7 @@ MonoBehaviour:
     Data3: 263953833
     Data4: -517123142
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -222,7 +262,7 @@ MonoBehaviour:
     Data3: 347280568
     Data4: -1216941883
   Banks:
-  - {fileID: -5543284983364034218}
+  - {fileID: 6776495315364235349}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -249,7 +289,7 @@ MonoBehaviour:
     Data3: 699821698
     Data4: 2075916765
   Banks:
-  - {fileID: -5543284983364034218}
+  - {fileID: 6776495315364235349}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -276,7 +316,7 @@ MonoBehaviour:
     Data3: -72469617
     Data4: 673937952
   Banks:
-  - {fileID: 6234059873140293579}
+  - {fileID: -5524390591031034044}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -303,7 +343,7 @@ MonoBehaviour:
     Data3: 812322231
     Data4: 849332983
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -311,7 +351,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11000
---- !u!114 &-5543284983364034218
+--- !u!114 &-5524390591031034044
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -321,15 +361,55 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Files.bank
+  m_Name: bank:/Music.bank
   m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/Files.bank
-  Name: Files
-  StudioPath: bank:/Files
-  lastModified: 637926963614894045
+  Path: FMOD/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 637926970110026102
   FileSizes:
   - Name: Desktop
-    Value: 12378
+    Value: 10510
+  Exists: 1
+--- !u!114 &-5449635251440015736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UI.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/UI.bank
+  Name: UI
+  StudioPath: bank:/UI
+  lastModified: 637926970268098613
+  FileSizes:
+  - Name: Desktop
+    Value: 24564
+  Exists: 1
+--- !u!114 &-5422536139232630273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Atmosphere.assets.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Atmosphere.assets.bank
+  Name: Atmosphere.assets
+  StudioPath: bank:/Atmosphere.assets
+  lastModified: 637926969955007994
+  FileSizes:
+  - Name: Desktop
+    Value: 13006368
   Exists: 1
 --- !u!114 &-5243894694330481218
 MonoBehaviour:
@@ -350,7 +430,7 @@ MonoBehaviour:
     Data3: 1648624286
     Data4: 772325929
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -377,7 +457,7 @@ MonoBehaviour:
     Data3: 1978660524
     Data4: -215870805
   Banks:
-  - {fileID: 6234059873140293579}
+  - {fileID: -5524390591031034044}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -406,7 +486,7 @@ MonoBehaviour:
     Data3: 610166460
     Data4: 1377453728
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -457,7 +537,7 @@ MonoBehaviour:
     Data3: 1269410194
     Data4: -224479074
   Banks:
-  - {fileID: 2385935357747244433}
+  - {fileID: -7160164198101323064}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -488,26 +568,6 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
---- !u!114 &-3674017070987205470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Files.assets.bank
-  m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/Files.assets.bank
-  Name: Files.assets
-  StudioPath: bank:/Files.assets
-  lastModified: 637926963617172315
-  FileSizes:
-  - Name: Desktop
-    Value: 4251552
   Exists: 1
 --- !u!114 &-3516114567068692403
 MonoBehaviour:
@@ -576,7 +636,7 @@ MonoBehaviour:
     Data3: 157167789
     Data4: 179372321
   Banks:
-  - {fileID: 6234059873140293579}
+  - {fileID: -5524390591031034044}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -585,6 +645,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 158999
+--- !u!114 &-3230857029229563443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Scene.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Scene.bank
+  Name: Scene
+  StudioPath: bank:/Scene
+  lastModified: 637926970180562472
+  FileSizes:
+  - Name: Desktop
+    Value: 24796
+  Exists: 1
 --- !u!114 &-3175687371912433335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,7 +684,7 @@ MonoBehaviour:
     Data3: -1687432550
     Data4: -1034312596
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -631,7 +711,7 @@ MonoBehaviour:
     Data3: 1211240620
     Data4: -948069537
   Banks:
-  - {fileID: 2385935357747244433}
+  - {fileID: -7160164198101323064}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -658,7 +738,7 @@ MonoBehaviour:
     Data3: -1340357228
     Data4: 468787024
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -685,7 +765,7 @@ MonoBehaviour:
     Data3: -1886357883
     Data4: -846044180
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -712,7 +792,7 @@ MonoBehaviour:
     Data3: -363412546
     Data4: 383589034
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -741,7 +821,7 @@ MonoBehaviour:
     Data3: 1137608857
     Data4: 280904306
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -749,6 +829,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 7000
+--- !u!114 &-847986870486102997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637926970053306469
+  FileSizes:
+  - Name: Desktop
+    Value: 2150
+  Exists: 1
 --- !u!114 &-744870448216655550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,7 +868,7 @@ MonoBehaviour:
     Data3: 173385908
     Data4: -1736215558
   Banks:
-  - {fileID: 2385935357747244433}
+  - {fileID: -7160164198101323064}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -776,26 +876,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 136200
---- !u!114 &-660841077845797116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/UI.bank
-  m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/UI.bank
-  Name: UI
-  StudioPath: bank:/UI
-  lastModified: 637926963633711279
-  FileSizes:
-  - Name: Desktop
-    Value: 24564
-  Exists: 1
 --- !u!114 &-560341085381133112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,7 +895,7 @@ MonoBehaviour:
     Data3: 1552313765
     Data4: 916003314
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -842,7 +922,7 @@ MonoBehaviour:
     Data3: 305957541
     Data4: 1222780980
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -893,7 +973,7 @@ MonoBehaviour:
     Data3: -66683206
     Data4: 1802262951
   Banks:
-  - {fileID: 2385935357747244433}
+  - {fileID: -7160164198101323064}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -914,19 +994,19 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 1906844956264577914}
-  - {fileID: 3648241706764387818}
-  - {fileID: 2385935357747244433}
-  - {fileID: -3674017070987205470}
-  - {fileID: -5543284983364034218}
-  - {fileID: 6100895297142825910}
-  - {fileID: 8202956334796207201}
-  - {fileID: 5296743664837257363}
-  - {fileID: 6234059873140293579}
-  - {fileID: 6011755501536239216}
-  - {fileID: 5074284546700356112}
-  - {fileID: -8105511956539515377}
-  - {fileID: -660841077845797116}
+  - {fileID: -8363155865077296228}
+  - {fileID: -5422536139232630273}
+  - {fileID: -7160164198101323064}
+  - {fileID: 6515041284995977322}
+  - {fileID: 6776495315364235349}
+  - {fileID: -7822873261562231470}
+  - {fileID: -847986870486102997}
+  - {fileID: 1353040238815685513}
+  - {fileID: -5524390591031034044}
+  - {fileID: 1037127310437589073}
+  - {fileID: -3230857029229563443}
+  - {fileID: 5932285502447573900}
+  - {fileID: -5449635251440015736}
   EditorEvents:
   - {fileID: -11734336866997511}
   - {fileID: -4033168574093090818}
@@ -990,10 +1070,10 @@ MonoBehaviour:
   - {fileID: 9104710996901592008}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8202956334796207201}
+  - {fileID: -847986870486102997}
   StringsBanks:
-  - {fileID: 1906844956264577914}
-  cacheTime: 637926963636849327
+  - {fileID: -8363155865077296228}
+  cacheTime: 637926970344494495
   cacheVersion: 131591
 --- !u!114 &178469354276119779
 MonoBehaviour:
@@ -1014,8 +1094,8 @@ MonoBehaviour:
     Data3: 705788802
     Data4: -200804371
   Banks:
-  - {fileID: 8202956334796207201}
-  - {fileID: 6234059873140293579}
+  - {fileID: -847986870486102997}
+  - {fileID: -5524390591031034044}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1042,7 +1122,7 @@ MonoBehaviour:
     Data3: 1403683232
     Data4: -1470295530
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1069,7 +1149,7 @@ MonoBehaviour:
     Data3: 527301041
     Data4: 789093522
   Banks:
-  - {fileID: 6234059873140293579}
+  - {fileID: -5524390591031034044}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1096,7 +1176,7 @@ MonoBehaviour:
     Data3: 1284532612
     Data4: -100262975
   Banks:
-  - {fileID: 2385935357747244433}
+  - {fileID: -7160164198101323064}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -1123,7 +1203,7 @@ MonoBehaviour:
     Data3: 2046932141
     Data4: 267207775
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1131,6 +1211,46 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 900
   Length: 81855
+--- !u!114 &1037127310437589073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Scene.assets.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Scene.assets.bank
+  Name: Scene.assets
+  StudioPath: bank:/Scene.assets
+  lastModified: 637926970266658481
+  FileSizes:
+  - Name: Desktop
+    Value: 11013440
+  Exists: 1
+--- !u!114 &1353040238815685513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.assets.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Music.assets.bank
+  Name: Music.assets
+  StudioPath: bank:/Music.assets
+  lastModified: 637926970178706154
+  FileSizes:
+  - Name: Desktop
+    Value: 9330048
+  Exists: 1
 --- !u!114 &1527755596803758643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1150,7 +1270,7 @@ MonoBehaviour:
     Data3: -525684585
     Data4: 2022340644
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1177,7 +1297,7 @@ MonoBehaviour:
     Data3: -1646411097
     Data4: 1660166508
   Banks:
-  - {fileID: 2385935357747244433}
+  - {fileID: -7160164198101323064}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1204,7 +1324,7 @@ MonoBehaviour:
     Data3: 1217647237
     Data4: 1995205164
   Banks:
-  - {fileID: -5543284983364034218}
+  - {fileID: 6776495315364235349}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1255,7 +1375,7 @@ MonoBehaviour:
     Data3: 2128460733
     Data4: 1589157578
   Banks:
-  - {fileID: 2385935357747244433}
+  - {fileID: -7160164198101323064}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1263,26 +1383,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 128999
---- !u!114 &1906844956264577914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637926963619219146
-  FileSizes:
-  - Name: Desktop
-    Value: 4410
-  Exists: 1
 --- !u!114 &1967996016879399649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,7 +1402,7 @@ MonoBehaviour:
     Data3: -162516346
     Data4: -686280129
   Banks:
-  - {fileID: -5543284983364034218}
+  - {fileID: 6776495315364235349}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1329,7 +1429,7 @@ MonoBehaviour:
     Data3: 1649581973
     Data4: -938952434
   Banks:
-  - {fileID: 2385935357747244433}
+  - {fileID: -7160164198101323064}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1356,7 +1456,7 @@ MonoBehaviour:
     Data3: -721622385
     Data4: 1074349923
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1383,7 +1483,7 @@ MonoBehaviour:
     Data3: 208896696
     Data4: 568260626
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1410,7 +1510,7 @@ MonoBehaviour:
     Data3: 1424037275
     Data4: -62906928
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1418,26 +1518,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &2385935357747244433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Atmosphere.bank
-  m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/Atmosphere.bank
-  Name: Atmosphere
-  StudioPath: bank:/Atmosphere
-  lastModified: 637926963607677958
-  FileSizes:
-  - Name: Desktop
-    Value: 11816
-  Exists: 1
 --- !u!114 &2768040505355879666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1457,7 +1537,7 @@ MonoBehaviour:
     Data3: 799359923
     Data4: -943215251
   Banks:
-  - {fileID: 6234059873140293579}
+  - {fileID: -5524390591031034044}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1484,7 +1564,7 @@ MonoBehaviour:
     Data3: -1081964899
     Data4: 1246603514
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1511,7 +1591,7 @@ MonoBehaviour:
     Data3: -466367828
     Data4: 1453004060
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1538,7 +1618,7 @@ MonoBehaviour:
     Data3: 428016534
     Data4: 927300455
   Banks:
-  - {fileID: -5543284983364034218}
+  - {fileID: 6776495315364235349}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1546,26 +1626,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3500
---- !u!114 &3648241706764387818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Atmosphere.assets.bank
-  m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/Atmosphere.assets.bank
-  Name: Atmosphere.assets
-  StudioPath: bank:/Atmosphere.assets
-  lastModified: 637926963611314460
-  FileSizes:
-  - Name: Desktop
-    Value: 13006368
-  Exists: 1
 --- !u!114 &3650635827769223656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1585,7 +1645,7 @@ MonoBehaviour:
     Data3: 1164235178
     Data4: -1826758900
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1636,7 +1696,7 @@ MonoBehaviour:
     Data3: -2117542733
     Data4: 1172318140
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -1666,7 +1726,7 @@ MonoBehaviour:
     Data3: -26533222
     Data4: 1621612025
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1693,7 +1753,7 @@ MonoBehaviour:
     Data3: -79988314
     Data4: 303552948
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1701,26 +1761,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 720
---- !u!114 &5074284546700356112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Scene.bank
-  m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/Scene.bank
-  Name: Scene
-  StudioPath: bank:/Scene
-  lastModified: 637926963628117618
-  FileSizes:
-  - Name: Desktop
-    Value: 24796
-  Exists: 1
 --- !u!114 &5102370051651420685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1740,7 +1780,7 @@ MonoBehaviour:
     Data3: 724240814
     Data4: 1762954805
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1775,26 +1815,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &5296743664837257363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.assets.bank
-  m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/Music.assets.bank
-  Name: Music.assets
-  StudioPath: bank:/Music.assets
-  lastModified: 637926963625300563
-  FileSizes:
-  - Name: Desktop
-    Value: 9330048
-  Exists: 1
 --- !u!114 &5534567961681554104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,7 +1834,7 @@ MonoBehaviour:
     Data3: 1286192318
     Data4: 1039553681
   Banks:
-  - {fileID: -5543284983364034218}
+  - {fileID: 6776495315364235349}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1841,7 +1861,7 @@ MonoBehaviour:
     Data3: 1660693404
     Data4: 441340616
   Banks:
-  - {fileID: -5543284983364034218}
+  - {fileID: 6776495315364235349}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1868,7 +1888,7 @@ MonoBehaviour:
     Data3: -550958447
     Data4: -145001956
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1895,7 +1915,7 @@ MonoBehaviour:
     Data3: 1439250336
     Data4: -1257487590
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1903,6 +1923,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6500
+--- !u!114 &5932285502447573900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UI.assets.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/UI.assets.bank
+  Name: UI.assets
+  StudioPath: bank:/UI.assets
+  lastModified: 637926970344494495
+  FileSizes:
+  - Name: Desktop
+    Value: 6019840
+  Exists: 1
 --- !u!114 &5934563614538303718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1922,7 +1962,7 @@ MonoBehaviour:
     Data3: 600715910
     Data4: -995816590
   Banks:
-  - {fileID: 6234059873140293579}
+  - {fileID: -5524390591031034044}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1930,26 +1970,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 128999
---- !u!114 &6011755501536239216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Scene.assets.bank
-  m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/Scene.assets.bank
-  Name: Scene.assets
-  StudioPath: bank:/Scene.assets
-  lastModified: 637926963631352738
-  FileSizes:
-  - Name: Desktop
-    Value: 11013440
-  Exists: 1
 --- !u!114 &6066776022384851256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1969,7 +1989,7 @@ MonoBehaviour:
     Data3: 2115650987
     Data4: 1989956234
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1977,7 +1997,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &6100895297142825910
+--- !u!114 &6515041284995977322
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1987,17 +2007,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.assets.bank
+  m_Name: bank:/Files.assets.bank
   m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/Master.assets.bank
-  Name: Master.assets
-  StudioPath: bank:/Master.assets
-  lastModified: 637926963619148729
+  Path: FMOD/Build/Desktop/Files.assets.bank
+  Name: Files.assets
+  StudioPath: bank:/Files.assets
+  lastModified: 637926970052816901
   FileSizes:
   - Name: Desktop
-    Value: 1829856
+    Value: 4251552
   Exists: 1
---- !u!114 &6234059873140293579
+--- !u!114 &6776495315364235349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2007,15 +2027,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
+  m_Name: bank:/Files.bank
   m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-  lastModified: 637926963621130613
+  Path: FMOD/Build/Desktop/Files.bank
+  Name: Files
+  StudioPath: bank:/Files
+  lastModified: 637926969956386568
   FileSizes:
   - Name: Desktop
-    Value: 10510
+    Value: 12378
   Exists: 1
 --- !u!114 &7077263957510463430
 MonoBehaviour:
@@ -2036,7 +2056,7 @@ MonoBehaviour:
     Data3: -1269987921
     Data4: 1654251701
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2063,7 +2083,7 @@ MonoBehaviour:
     Data3: 216123549
     Data4: 1618940697
   Banks:
-  - {fileID: -5543284983364034218}
+  - {fileID: 6776495315364235349}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2090,7 +2110,7 @@ MonoBehaviour:
     Data3: 293891716
     Data4: 2108982067
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2117,7 +2137,7 @@ MonoBehaviour:
     Data3: 1045842355
     Data4: -1419268223
   Banks:
-  - {fileID: 5074284546700356112}
+  - {fileID: -3230857029229563443}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2144,7 +2164,7 @@ MonoBehaviour:
     Data3: -813192555
     Data4: -1401468704
   Banks:
-  - {fileID: 2385935357747244433}
+  - {fileID: -7160164198101323064}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2152,26 +2172,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 69818
---- !u!114 &8202956334796207201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../truthdetectives_fmodstudio/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637926963618059668
-  FileSizes:
-  - Name: Desktop
-    Value: 2150
-  Exists: 1
 --- !u!114 &8829709827375182480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2191,7 +2191,7 @@ MonoBehaviour:
     Data3: -1990225513
     Data4: -992056143
   Banks:
-  - {fileID: -5543284983364034218}
+  - {fileID: 6776495315364235349}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2242,7 +2242,7 @@ MonoBehaviour:
     Data3: -23817327
     Data4: 2053212168
   Banks:
-  - {fileID: -660841077845797116}
+  - {fileID: -5449635251440015736}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
