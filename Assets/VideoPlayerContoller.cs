@@ -17,7 +17,9 @@ public class VideoPlayerContoller : MonoBehaviour
     void Start() 
     {
         image.sprite = offSprite;
-        vid.loopPointReached += CheckOver; 
+        vid.loopPointReached += CheckOver;
+
+        vid.Play();
     }
 
     void CheckOver(UnityEngine.Video.VideoPlayer vp)
