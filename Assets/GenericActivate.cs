@@ -8,12 +8,28 @@ public class GenericActivate : MonoBehaviour
     // Start is called before the first frame update
     //nice thing about start, it is called when ever the GameObject is activated,
     //such that we can activate other game objects in response.
+
+    public float delay = 0.5f;
+    float timer = -1;
+
     void Start()
     {
-        foreach(GameObject obj in toActivate)
-        {
-            obj.SetActive(true);
-        }
-    }
+        timer = Time.time;
 
+    }
+    private void Update()
+    {
+        if (Time.time - timer > delay && timer > 0 )
+        {
+            foreach (GameObject obj in toActivate)
+            {
+                obj.SetActive(true);
+
+            }
+            timer = -1;
+            //maybe...
+            this.enabled = false;
+        }
+        
+    }
 }
