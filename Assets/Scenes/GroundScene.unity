@@ -719,6 +719,7 @@ GameObject:
   - component: {fileID: 165244229}
   - component: {fileID: 165244231}
   - component: {fileID: 165244230}
+  - component: {fileID: 165244232}
   m_Layer: 5
   m_Name: GroundVideo
   m_TagString: Untagged
@@ -784,6 +785,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165244228}
   m_CullTransparentMesh: 1
+--- !u!114 &165244232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165244228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 943957083
+      Data2: 1231683758
+      Data3: -550958447
+      Data4: -145001956
+    Path: event:/UI/37_td_audio
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &188518234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,6 +1352,7 @@ GameObject:
   - component: {fileID: 407927752}
   - component: {fileID: 407927754}
   - component: {fileID: 407927753}
+  - component: {fileID: 407927755}
   m_Layer: 5
   m_Name: Nisreen8
   m_TagString: Untagged
@@ -1385,6 +1417,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407927751}
   m_CullTransparentMesh: 1
+--- !u!114 &407927755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407927751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 943957083
+      Data2: 1231683758
+      Data3: -550958447
+      Data4: -145001956
+    Path: event:/UI/37_td_audio
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &419547804
 GameObject:
   m_ObjectHideFlags: 0
@@ -3415,6 +3477,7 @@ GameObject:
   - component: {fileID: 1117911844}
   - component: {fileID: 1117911843}
   - component: {fileID: 1117911842}
+  - component: {fileID: 1117911846}
   m_Layer: 5
   m_Name: Img Shad
   m_TagString: Untagged
@@ -3522,6 +3585,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 2010303179}
+          m_TargetAssemblyTypeName: SelectedActive, Assembly-CSharp
+          m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1117911846}
+          m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!114 &1117911844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3557,6 +3644,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117911840}
   m_CullTransparentMesh: 1
+--- !u!114 &1117911846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117911840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -432024770
+      Data2: 1222492211
+      Data3: -1687432550
+      Data4: -1034312596
+    Path: event:/UI/40_td_audio
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1118512083
 GameObject:
   m_ObjectHideFlags: 0
@@ -4009,6 +4126,7 @@ GameObject:
   - component: {fileID: 1199828235}
   - component: {fileID: 1199828234}
   - component: {fileID: 1199828233}
+  - component: {fileID: 1199828237}
   m_Layer: 5
   m_Name: Img Roof
   m_TagString: Untagged
@@ -4116,6 +4234,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1325965366}
+          m_TargetAssemblyTypeName: SelectedActive, Assembly-CSharp
+          m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1199828237}
+          m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!114 &1199828235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4151,6 +4293,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199828231}
   m_CullTransparentMesh: 1
+--- !u!114 &1199828237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199828231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -432024770
+      Data2: 1222492211
+      Data3: -1687432550
+      Data4: -1034312596
+    Path: event:/UI/40_td_audio
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1223944520
 GameObject:
   m_ObjectHideFlags: 0
@@ -4356,6 +4528,8 @@ MonoBehaviour:
   locations: {fileID: 0}
   dialog: {fileID: 0}
   enhanceButton: {fileID: 0}
+  markB: {fileID: 0}
+  markA: {fileID: 0}
 --- !u!114 &1225254926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4416,7 +4590,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000007176235, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -0.000004793851, y: -0.0000076293945}
   m_SizeDelta: {x: -786, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1325965365
@@ -5098,6 +5272,7 @@ GameObject:
   - component: {fileID: 1460200444}
   - component: {fileID: 1460200443}
   - component: {fileID: 1460200442}
+  - component: {fileID: 1460200446}
   m_Layer: 5
   m_Name: Img Radio
   m_TagString: Untagged
@@ -5205,6 +5380,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 188518236}
+          m_TargetAssemblyTypeName: SelectedActive, Assembly-CSharp
+          m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1460200446}
+          m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!114 &1460200444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5240,6 +5439,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460200440}
   m_CullTransparentMesh: 1
+--- !u!114 &1460200446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460200440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -432024770
+      Data2: 1222492211
+      Data3: -1687432550
+      Data4: -1034312596
+    Path: event:/UI/40_td_audio
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1486324731
 GameObject:
   m_ObjectHideFlags: 0
@@ -5456,8 +5685,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1509506124}
   - component: {fileID: 1509506123}
-  - component: {fileID: 1509506122}
   - component: {fileID: 1509506121}
+  - component: {fileID: 1509506122}
   m_Layer: 0
   m_Name: DiaCamera
   m_TagString: DialogueCamera
@@ -5498,14 +5727,19 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &1509506122
-AudioListener:
+--- !u!114 &1509506122
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509506120}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!20 &1509506123
 Camera:
   m_ObjectHideFlags: 0
@@ -5816,6 +6050,7 @@ GameObject:
   - component: {fileID: 1683605760}
   - component: {fileID: 1683605759}
   - component: {fileID: 1683605758}
+  - component: {fileID: 1683605762}
   m_Layer: 5
   m_Name: Img Hosp
   m_TagString: Untagged
@@ -5923,6 +6158,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1529954584}
+          m_TargetAssemblyTypeName: SelectedActive, Assembly-CSharp
+          m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1683605762}
+          m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!114 &1683605760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5958,6 +6217,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683605756}
   m_CullTransparentMesh: 1
+--- !u!114 &1683605762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683605756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -432024770
+      Data2: 1222492211
+      Data3: -1687432550
+      Data4: -1034312596
+    Path: event:/UI/40_td_audio
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1723889586
 GameObject:
   m_ObjectHideFlags: 0
@@ -6731,7 +7020,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2142987601}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.9999785
+  m_Size: 0.9997959
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8121,14 +8410,6 @@ Transform:
   m_Father: {fileID: 543450653240332261}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &6902373413752005272
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6902373413752005275}
-  m_Enabled: 1
 --- !u!20 &6902373413752005273
 Camera:
   m_ObjectHideFlags: 0
@@ -8182,9 +8463,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6902373413752005278}
   - component: {fileID: 6902373413752005273}
-  - component: {fileID: 6902373413752005272}
   - component: {fileID: 6902373413752005279}
   - component: {fileID: 6902373413752005276}
+  - component: {fileID: 6902373413752005277}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8225,6 +8506,19 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &6902373413752005277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6902373413752005275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!4 &6902373413752005278
 Transform:
   m_ObjectHideFlags: 0
