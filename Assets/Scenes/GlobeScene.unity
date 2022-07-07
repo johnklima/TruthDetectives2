@@ -12897,7 +12897,7 @@ MonoBehaviour:
   goalEs:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
-  - {x: -45, y: 0, z: 0}
+  - {x: -30, y: 0, z: 0}
   goalDs:
   - {x: 0, y: 0, z: -45}
   - {x: 0, y: 0, z: -10}
