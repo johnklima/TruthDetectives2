@@ -12,6 +12,7 @@ public class ReferenceContentManager : MonoBehaviour
     public GameObject enhanceButton;
     public MarkerB markB;
     public markerA markA;
+    public GameObject stillFrameBack;     // changed by Raphael
 
 
     public void SetIndex(int indx)
@@ -30,7 +31,8 @@ public class ReferenceContentManager : MonoBehaviour
             if (count >= transform.childCount - 1) 
             {
                 
-                navTool.SetActive(true);
+                navTool.SetActive(true);               // changed by Raphael
+                stillFrameBack.SetActive(false);      // changed by Raphael
                 locations.SetActive(true);
                 stillFrame.SetActive(false);
                 enhanceButton.SetActive(false);
