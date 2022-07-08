@@ -14,7 +14,7 @@ public class ReferenceContentManager : MonoBehaviour
     public markerA markA;
     public GameObject stillFrameBack;     // changed by Raphael
     public GameObject mediaArchive;       // changed by Raphael
-
+    public GameObject mapView;            // changed by Raphael
 
     public void SetIndex(int indx)
     {
@@ -35,6 +35,7 @@ public class ReferenceContentManager : MonoBehaviour
                 navTool.SetActive(true);               // changed by Raphael
                 stillFrameBack.SetActive(false);      // changed by Raphael
                 mediaArchive.SetActive(false);          // changed by Raphael
+                mapView.SetActive(true);                // changed by Raphael
                 locations.SetActive(true);
                 stillFrame.SetActive(false);
                 enhanceButton.SetActive(false);
