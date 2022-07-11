@@ -44,7 +44,7 @@ public class ReferenceContentManager : MonoBehaviour
                 markA.goodToGo = true;
                 markB.goodToGo = true;
 
-                stillFrameBackround.SetActive(false);
+                
 
                 dialog.KickOffTimer(7); //find a better way
 
