@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1366
     height: 685
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 687
+  controlID: 120
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 688
+  controlID: 45
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 689
+  controlID: 46
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -356,9 +356,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 5}
-    m_SelectedIDs: 58b00000
-    m_LastClickedID: 45144
-    m_ExpandedIDs: 0000000056b00000ffffff7f
+    m_SelectedIDs: 92650000
+    m_LastClickedID: 26002
+    m_ExpandedIDs: 0000000010640000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -386,7 +386,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 0000000010640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -514,23 +514,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b6b10000
-      m_LastClickedID: 45494
-      m_ExpandedIDs: 84b9ffff5abbffffa0b00000b6b1000034b40000fab40000c2b60000d2b60000
+      m_SelectedIDs: 02600000
+      m_LastClickedID: 24578
+      m_ExpandedIDs: 32fbffffc860000090620000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Decal Projector
-        m_OriginalName: Decal Projector
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 45852
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -765,7 +765,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.10615206, y: 0.07212448, z: -9.153268}
+    m_Target: {x: -0.0842765, y: 0.053159118, z: -8.804252}
     speed: 2
     m_Value: {x: -0.10615206, y: 0.07212448, z: -9.153268}
   m_RenderMode: 0
@@ -816,9 +816,9 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.054283135, y: -0.0015018447, z: 0.000080155914, w: 0.9985288}
     speed: 2
-    m_Value: {x: 0.0542829, y: -0.0015018383, z: 0.00008015557, w: 0.9985245}
+    m_Value: {x: -0.05428313, y: 0.0015018447, z: -0.000080155914, w: -0.9985288}
   m_Size:
-    m_Target: 0.034594815
+    m_Target: 0.07045076
     speed: 2
     m_Value: 0.034594815
   m_Ortho:
