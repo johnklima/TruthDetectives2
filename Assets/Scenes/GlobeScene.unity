@@ -997,6 +997,10 @@ Transform:
   - {fileID: 1825748034}
   - {fileID: 1149174179}
   - {fileID: 2070360048}
+  - {fileID: 1457203469}
+  - {fileID: 1227031525}
+  - {fileID: 1485389603}
+  - {fileID: 1035284838}
   m_Father: {fileID: 1243988839}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9235,6 +9239,61 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!1 &1035284837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1035284838}
+  - component: {fileID: 1035284839}
+  m_Layer: 0
+  m_Name: Decal Projector Line radio hospital
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1035284838
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035284837}
+  m_LocalRotation: {x: 0.1780008, y: 0.68433595, z: -0.68433607, w: 0.1780009}
+  m_LocalPosition: {x: -0.0154, y: 0.8598, z: 0.0035}
+  m_LocalScale: {x: 0.0039999993, y: 0.0039999993, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 98958946}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -150.84}
+--- !u!114 &1035284839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035284837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 39f17c8e6e8319b45b50450a3a83ab69, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.9
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_ScaleMode: 0
+  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Size: {x: 0.001, y: 0.243, z: 1}
+  m_FadeFactor: 1
 --- !u!1 &1045875310
 GameObject:
   m_ObjectHideFlags: 0
@@ -10901,6 +10960,61 @@ MonoBehaviour:
   timer: -1
   child: {fileID: 0}
   interval: 0.5
+--- !u!1 &1227031524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1227031525}
+  - component: {fileID: 1227031526}
+  m_Layer: 0
+  m_Name: Decal Projector Line side hospital
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1227031525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227031524}
+  m_LocalRotation: {x: -0.34229124, y: 0.61873806, z: -0.61873806, w: -0.34229106}
+  m_LocalPosition: {x: -0.01738, y: 0.85977, z: 0.01727}
+  m_LocalScale: {x: 0.0039999993, y: 0.0039999993, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 98958946}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -237.903}
+--- !u!114 &1227031526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227031524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 39f17c8e6e8319b45b50450a3a83ab69, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.9
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_ScaleMode: 0
+  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Size: {x: 0.001, y: 0.08, z: 1}
+  m_FadeFactor: 1
 --- !u!1 &1228611634
 GameObject:
   m_ObjectHideFlags: 0
@@ -12589,6 +12703,61 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!1 &1457203468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1457203469}
+  - component: {fileID: 1457203470}
+  m_Layer: 0
+  m_Name: Decal Projector Line water hospital
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1457203469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457203468}
+  m_LocalRotation: {x: -0.550864, y: 0.44333836, z: -0.44333848, w: -0.55086386}
+  m_LocalPosition: {x: -0.01003, y: 0.85977, z: 0.01177}
+  m_LocalScale: {x: 0.0039999993, y: 0.0039999993, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 98958946}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -282.345}
+--- !u!114 &1457203470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457203468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 39f17c8e6e8319b45b50450a3a83ab69, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.9
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_ScaleMode: 0
+  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Size: {x: 0.001, y: 0.22, z: 1}
+  m_FadeFactor: 1
 --- !u!1 &1458916729
 GameObject:
   m_ObjectHideFlags: 0
@@ -12789,6 +12958,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469942216}
   m_CullTransparentMesh: 1
+--- !u!1 &1485389602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1485389603}
+  - component: {fileID: 1485389604}
+  m_Layer: 0
+  m_Name: Decal Projector Line side water
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1485389603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485389602}
+  m_LocalRotation: {x: -0.6304324, y: 0.32024223, z: -0.32024226, w: -0.6304323}
+  m_LocalPosition: {x: -0.0055, y: 0.85977, z: 0.01469}
+  m_LocalScale: {x: 0.0039999993, y: 0.0039999993, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 98958946}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -306.141}
+--- !u!114 &1485389604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485389602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 39f17c8e6e8319b45b50450a3a83ab69, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.9
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_ScaleMode: 0
+  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Size: {x: 0.001, y: 0.16, z: 1}
+  m_FadeFactor: 1
 --- !u!1 &1488193725
 GameObject:
   m_ObjectHideFlags: 0
@@ -17820,7 +18044,7 @@ GameObject:
   - component: {fileID: 2070360048}
   - component: {fileID: 2070360049}
   m_Layer: 0
-  m_Name: Decal Projector Line
+  m_Name: Decal Projector Line radio water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17833,14 +18057,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070360047}
-  m_LocalRotation: {x: 0.678712, y: 0.19836858, z: -0.19836856, w: 0.67871195}
-  m_LocalPosition: {x: -0.0034, y: 0.85977, z: 0.00078}
+  m_LocalRotation: {x: 0.6821515, y: 0.18619709, z: -0.18619706, w: 0.68215156}
+  m_LocalPosition: {x: -0.00324, y: 0.85977, z: 0.00069}
   m_LocalScale: {x: 0.0039999993, y: 0.0039999993, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 98958946}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -32.584}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -30.535}
 --- !u!114 &2070360049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17862,7 +18086,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_ScaleMode: 0
   m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 0.003, y: 0.18, z: 1}
+  m_Size: {x: 0.001, y: 0.175, z: 1}
   m_FadeFactor: 1
 --- !u!1 &2076503602
 GameObject:
