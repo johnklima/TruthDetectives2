@@ -14,7 +14,7 @@ public class GlobalState : MonoBehaviour
     public Sprite sprite;
     public int placedCount = 0;
     public DialogueCamera dcam;
-
+    public float loadTimer = -1;
     
     // Start is called before the first frame update
     void Start()
@@ -32,22 +32,20 @@ public class GlobalState : MonoBehaviour
             placedCount = 5;
             loadGround();
         }
+        if (loadTimer > 0 && Time.time-loadTimer > 3)
+        {
+            TimerLoad();
+        }
 
 
 
     }
 
-    public void loadGround()
+    private void TimerLoad()
     {
-        placedCount++;
-        
-        //have we placed 3 of 4 buildings?
-        if (placedCount < 3)
-            return;
+        Destroy(Sat);
 
-        Destroy(Sat);   
-        
-        for(int i = 0; i < hideGuis.Length; i++)
+        for (int i = 0; i < hideGuis.Length; i++)
         {
             hideGuis[i].SetActive(false);
         }
@@ -61,7 +59,19 @@ public class GlobalState : MonoBehaviour
         StillFrame.sprite = sprite;
         StillFrame.SetNativeSize();
 
-        SceneManager.LoadSceneAsync("GroundScene",LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync("GroundScene", LoadSceneMode.Single);
+    }
+    public void loadGround()
+    {
+        placedCount++;
+        
+        //have we placed 3 of 4 buildings? 4 out of 4?
+        if (placedCount < 4)
+            return;
+
+        loadTimer = Time.time;
+
+        
 
     }
     
