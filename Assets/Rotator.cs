@@ -13,7 +13,22 @@ public class Rotator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Bit shift the index of the layer (3) to get a bit mask
+        int layerMask = 1 << 3;
+
+
+        RaycastHit hit;
+        Vector3 pos = new Vector3(Camera.main.pixelWidth / 2, Camera.main.pixelHeight / 2);
+        Ray ray = Camera.main.ScreenPointToRay(pos);
+
+        // Does the ray intersect any objects excluding the player layer
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
+        {
+            transform.LookAt(hit.point);
+
+        }
+
+
     }
 
     // Update is called once per frame
