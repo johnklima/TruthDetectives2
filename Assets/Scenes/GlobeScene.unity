@@ -2890,6 +2890,8 @@ MonoBehaviour:
   source: {fileID: 357671213}
   globalState: {fileID: 17674534}
   done: 0
+  MarkerToEnable: {fileID: 1276071317}
+  LineDependentObjects: []
 --- !u!65 &258780779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5114,6 +5116,8 @@ MonoBehaviour:
   source: {fileID: 705707061}
   globalState: {fileID: 17674534}
   done: 0
+  MarkerToEnable: {fileID: 1825748033}
+  LineDependentObjects: []
 --- !u!65 &483496851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9249,13 +9253,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1035284838}
   - component: {fileID: 1035284839}
+  - component: {fileID: 1035284840}
   m_Layer: 0
   m_Name: Decal Projector Line radio hospital
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1035284838
 Transform:
   m_ObjectHideFlags: 0
@@ -9278,7 +9283,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035284837}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
   m_Name: 
@@ -9294,6 +9299,22 @@ MonoBehaviour:
   m_Offset: {x: 0, y: 0, z: 0.5}
   m_Size: {x: 0.001, y: 0.243, z: 1}
   m_FadeFactor: 1
+--- !u!114 &1035284840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035284837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc706bc531903b4890e29f66efeb26f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FromTo:
+  - {fileID: 258780778}
+  - {fileID: 1091401189}
+  done: 0
 --- !u!1 &1045875310
 GameObject:
   m_ObjectHideFlags: 0
@@ -9900,6 +9921,8 @@ MonoBehaviour:
   source: {fileID: 6313756666321013634}
   globalState: {fileID: 17674534}
   done: 0
+  MarkerToEnable: {fileID: 1149174178}
+  LineDependentObjects: []
 --- !u!65 &1091401190
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10970,13 +10993,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1227031525}
   - component: {fileID: 1227031526}
+  - component: {fileID: 1227031527}
   m_Layer: 0
   m_Name: Decal Projector Line side hospital
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1227031525
 Transform:
   m_ObjectHideFlags: 0
@@ -10999,7 +11023,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227031524}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
   m_Name: 
@@ -11015,6 +11039,22 @@ MonoBehaviour:
   m_Offset: {x: 0, y: 0, z: 0.5}
   m_Size: {x: 0.001, y: 0.08, z: 1}
   m_FadeFactor: 1
+--- !u!114 &1227031527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227031524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc706bc531903b4890e29f66efeb26f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FromTo:
+  - {fileID: 483496850}
+  - {fileID: 1091401189}
+  done: 0
 --- !u!1 &1228611634
 GameObject:
   m_ObjectHideFlags: 0
@@ -12713,13 +12753,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1457203469}
   - component: {fileID: 1457203470}
+  - component: {fileID: 1457203471}
   m_Layer: 0
   m_Name: Decal Projector Line water hospital
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1457203469
 Transform:
   m_ObjectHideFlags: 0
@@ -12742,7 +12783,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457203468}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
   m_Name: 
@@ -12758,6 +12799,22 @@ MonoBehaviour:
   m_Offset: {x: 0, y: 0, z: 0.5}
   m_Size: {x: 0.001, y: 0.22, z: 1}
   m_FadeFactor: 1
+--- !u!114 &1457203471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457203468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc706bc531903b4890e29f66efeb26f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FromTo:
+  - {fileID: 1091401189}
+  - {fileID: 1868781895}
+  done: 0
 --- !u!1 &1458916729
 GameObject:
   m_ObjectHideFlags: 0
@@ -12968,13 +13025,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1485389603}
   - component: {fileID: 1485389604}
+  - component: {fileID: 1485389605}
   m_Layer: 0
   m_Name: Decal Projector Line side water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1485389603
 Transform:
   m_ObjectHideFlags: 0
@@ -12997,7 +13055,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485389602}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
   m_Name: 
@@ -13013,6 +13071,22 @@ MonoBehaviour:
   m_Offset: {x: 0, y: 0, z: 0.5}
   m_Size: {x: 0.001, y: 0.16, z: 1}
   m_FadeFactor: 1
+--- !u!114 &1485389605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485389602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc706bc531903b4890e29f66efeb26f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FromTo:
+  - {fileID: 483496850}
+  - {fileID: 1868781895}
+  done: 0
 --- !u!1 &1488193725
 GameObject:
   m_ObjectHideFlags: 0
@@ -16487,6 +16561,8 @@ MonoBehaviour:
   source: {fileID: 5641958851637001875}
   globalState: {fileID: 17674534}
   done: 0
+  MarkerToEnable: {fileID: 130082267}
+  LineDependentObjects: []
 --- !u!65 &1868781896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18043,13 +18119,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2070360048}
   - component: {fileID: 2070360049}
+  - component: {fileID: 2070360050}
   m_Layer: 0
   m_Name: Decal Projector Line radio water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2070360048
 Transform:
   m_ObjectHideFlags: 0
@@ -18072,7 +18149,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070360047}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
   m_Name: 
@@ -18088,6 +18165,22 @@ MonoBehaviour:
   m_Offset: {x: 0, y: 0, z: 0.5}
   m_Size: {x: 0.001, y: 0.175, z: 1}
   m_FadeFactor: 1
+--- !u!114 &2070360050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070360047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc706bc531903b4890e29f66efeb26f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FromTo:
+  - {fileID: 1868781895}
+  - {fileID: 258780778}
+  done: 0
 --- !u!1 &2076503602
 GameObject:
   m_ObjectHideFlags: 0

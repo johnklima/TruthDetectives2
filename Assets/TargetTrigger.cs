@@ -8,6 +8,8 @@ public class TargetTrigger : MonoBehaviour
     public Transform source;
     public GlobalState globalState;
     public bool done = false;
+    public GameObject MarkerToEnable;
+    public GameObject[] LineDependentObjects;
 
     // Update is called once per frame
     void Update()
@@ -28,6 +30,13 @@ public class TargetTrigger : MonoBehaviour
 
                 //counts up till all are placed, then loads
                 globalState.loadGround();
+
+                //enable lines
+                foreach(GameObject obj in LineDependentObjects)
+                {
+                   
+                }
+                MarkerToEnable.SetActive(true);
 
                 //turn me off
                 done = true;
