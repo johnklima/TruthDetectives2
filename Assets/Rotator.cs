@@ -8,11 +8,18 @@ public class Rotator : MonoBehaviour
     Vector3 prevMousePos;
     bool dragging = false;
     public Transform target;
-   
+    public bool allow = false;
+    public void AllowEnable()
+    {
+        allow = true;
+    }
 
     // Start is called before the first frame update
-    void Start()
+    public void checkEnable()
     {
+        if (allow == false)
+            return;
+
         // Bit shift the index of the layer (3) to get a bit mask
         int layerMask = 1 << 3;
 

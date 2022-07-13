@@ -12,6 +12,9 @@ public class MarkerB : MonoBehaviour
     public Slider slider;
     public GameObject toolBot;
     public bool goodToGo = false;
+
+    public Rotator[] toAllow;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,13 @@ public class MarkerB : MonoBehaviour
                 Debug.Log("HIT " + objectHit.name);
                 if (objectHit.name == "markerHitB" && goodToGo)
                 {
+                    //turn on make models visible function on level transition
+                    foreach (Rotator rot in toAllow)
+                    {
+                        rot.AllowEnable();
+                    }
+
+
                     cameraGlobeController.TransitionCameraSpecific(camIndex);
                     cameraGlobeController.setGlobeRotation(); //todo, params
                     patchDisable.SetActive(false);

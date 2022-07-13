@@ -1370,6 +1370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 974953913}
+  allow: 0
 --- !u!1 &133634552
 GameObject:
   m_ObjectHideFlags: 0
@@ -3910,10 +3911,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 2087019271}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
+        - m_Target: {fileID: 2087019273}
+          m_TargetAssemblyTypeName: Rotator, Assembly-CSharp
+          m_MethodName: checkEnable
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4463,6 +4464,11 @@ MonoBehaviour:
   slider: {fileID: 1171516652}
   toolBot: {fileID: 1734415482}
   goodToGo: 0
+  toAllow:
+  - {fileID: 2087019273}
+  - {fileID: 2032735824}
+  - {fileID: 1190317011}
+  - {fileID: 1346818700}
 --- !u!1 &442750020
 GameObject:
   m_ObjectHideFlags: 0
@@ -5783,6 +5789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1975669481}
+  allow: 0
 --- !u!1 &567830341
 GameObject:
   m_ObjectHideFlags: 0
@@ -10669,6 +10676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 705707061}
+  allow: 0
 --- !u!1 &1195033885
 GameObject:
   m_ObjectHideFlags: 0
@@ -11209,10 +11217,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1190317009}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
+        - m_Target: {fileID: 1190317011}
+          m_TargetAssemblyTypeName: Rotator, Assembly-CSharp
+          m_MethodName: checkEnable
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11266,7 +11274,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1243988839
 Transform:
   m_ObjectHideFlags: 0
@@ -12143,6 +12151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2105828438}
+  allow: 0
 --- !u!1 &1335534900
 GameObject:
   m_ObjectHideFlags: 0
@@ -12298,6 +12307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 357671213}
+  allow: 0
 --- !u!1 &1351540551
 GameObject:
   m_ObjectHideFlags: 0
@@ -12344,6 +12354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1698008011}
+  allow: 0
 --- !u!1 &1357126338
 GameObject:
   m_ObjectHideFlags: 0
@@ -13253,10 +13264,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1346818698}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
+        - m_Target: {fileID: 1346818700}
+          m_TargetAssemblyTypeName: Rotator, Assembly-CSharp
+          m_MethodName: checkEnable
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13658,10 +13669,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 2032735822}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
+        - m_Target: {fileID: 2032735824}
+          m_TargetAssemblyTypeName: Rotator, Assembly-CSharp
+          m_MethodName: checkEnable
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16730,6 +16741,11 @@ MonoBehaviour:
   slider: {fileID: 1171516652}
   toolBot: {fileID: 1734415482}
   goodToGo: 0
+  toAllow:
+  - {fileID: 2087019273}
+  - {fileID: 1190317011}
+  - {fileID: 2032735824}
+  - {fileID: 1346818700}
 --- !u!64 &1869219687
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17965,6 +17981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 6313756666321013634}
+  allow: 0
 --- !u!1 &2043011615
 GameObject:
   m_ObjectHideFlags: 0
@@ -18389,6 +18406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 5641958851637001875}
+  allow: 0
 --- !u!1 &2096802433
 GameObject:
   m_ObjectHideFlags: 0
