@@ -17,8 +17,12 @@ public class Rotator : MonoBehaviour
     // Start is called before the first frame update
     public void checkEnable()
     {
+        Debug.Log("CheckEnable " + allow);
         if (allow == false)
             return;
+        
+        
+        transform.gameObject.SetActive(true);
 
         // Bit shift the index of the layer (3) to get a bit mask
         int layerMask = 1 << 3;
