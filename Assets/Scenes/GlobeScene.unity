@@ -1294,7 +1294,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130082267}
   m_LocalRotation: {x: 0.70710677, y: -0.000000014901158, z: -0.000000022351736, w: 0.7071068}
-  m_LocalPosition: {x: 0.00195, y: 0.89127, z: 0.00892}
+  m_LocalPosition: {x: 0.0025, y: 0.89127, z: 0.0072}
   m_LocalScale: {x: 0.0039999993, y: 0.0039999993, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10200,7 +10200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149174178}
   m_LocalRotation: {x: 0.70710677, y: -0.000000014901158, z: -0.000000022351736, w: 0.7071068}
-  m_LocalPosition: {x: -0.02158, y: 0.89127, z: 0.01438}
+  m_LocalPosition: {x: -0.0001, y: 0.89127, z: -0.0047}
   m_LocalScale: {x: 0.0039999993, y: 0.0039999993, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10228,7 +10228,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_ScaleMode: 0
   m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 0.03, y: 0.03, z: 1}
+  m_Size: {x: 0.02, y: 0.02, z: 1}
   m_FadeFactor: 1
 --- !u!1 &1171516650
 GameObject:
@@ -11316,7 +11316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276071317}
   m_LocalRotation: {x: 0.70710677, y: -0.000000014901158, z: -0.000000022351736, w: 0.7071068}
-  m_LocalPosition: {x: -0.00858, y: 0.89127, z: -0.00816}
+  m_LocalPosition: {x: 0.0118, y: 0.89127, z: -0.0024}
   m_LocalScale: {x: 0.0039999993, y: 0.0039999993, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11344,7 +11344,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_ScaleMode: 0
   m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 0.03, y: 0.03, z: 1}
+  m_Size: {x: 0.04, y: 0.04, z: 1}
   m_FadeFactor: 1
 --- !u!1 &1280431352
 GameObject:
@@ -16039,7 +16039,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825748033}
   m_LocalRotation: {x: 0.70710677, y: -0.000000014901158, z: -0.000000022351736, w: 0.7071068}
-  m_LocalPosition: {x: -0.01302, y: 0.89127, z: 0.01979}
+  m_LocalPosition: {x: 0.0007, y: 0.89127, z: -0.0013}
   m_LocalScale: {x: 0.0039999993, y: 0.0039999993, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16067,7 +16067,7 @@ MonoBehaviour:
   m_UVBias: {x: 0, y: 0}
   m_ScaleMode: 0
   m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 0.03, y: 0.03, z: 1}
+  m_Size: {x: 0.027, y: 0.027, z: 1}
   m_FadeFactor: 1
 --- !u!1 &1834881526
 GameObject:
