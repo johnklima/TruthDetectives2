@@ -9,7 +9,7 @@ public class DialogContentManager : MonoBehaviour
     public Transform child;
     public int index = 0;
     public Transform toolBot;
-    public int pauseIndex = 2;
+    public int pauseIndex = 2; 
 
     private void Awake()
     {
