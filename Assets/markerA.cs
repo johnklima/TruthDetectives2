@@ -13,6 +13,10 @@ public class markerA : MonoBehaviour
     public Slider slider;
     public GameObject toolBot;
     public bool goodToGo = false;
+    
+    public GameObject mapLocationA;            // changed by Raphael
+    public GameObject mapLocationB;             // changed by Raphael
+    public GameObject map2Locations;             // changed by Raphael
 
     public Rotator[] toAllow;
     // Start is called before the first frame update
@@ -48,6 +52,12 @@ public class markerA : MonoBehaviour
                     patchEnable.SetActive(true);
                     mediaSroll.SetActive(false);
                     toolBot.SetActive(true);
+                    
+                    mapLocationA.SetActive(true);  // Raphael
+                    mapLocationB.SetActive(false);   // Raphael
+                    map2Locations.SetActive(false); // Raphael
+
+                    
                     //this needs to be better resolved
                    
                     slider.minValue = 9.0f;

@@ -4503,6 +4503,9 @@ MonoBehaviour:
   slider: {fileID: 1171516652}
   toolBot: {fileID: 1734415482}
   goodToGo: 0
+  mapLocationA: {fileID: 1948485493}
+  mapLocationB: {fileID: 586110769}
+  map2Locations: {fileID: 2076503602}
   toAllow:
   - {fileID: 2087019273}
   - {fileID: 2032735824}
@@ -10478,9 +10481,12 @@ MonoBehaviour:
   enables:
   - {fileID: 308936150}
   - {fileID: 6404483192548512736}
+  - {fileID: 2076503602}
   disables:
   - {fileID: 1243988838}
   - {fileID: 190686353}
+  - {fileID: 1948485493}
+  - {fileID: 586110769}
 --- !u!1 &1174763844
 GameObject:
   m_ObjectHideFlags: 0
@@ -16856,6 +16862,9 @@ MonoBehaviour:
   slider: {fileID: 1171516652}
   toolBot: {fileID: 1734415482}
   goodToGo: 0
+  mapLocationA: {fileID: 1948485493}
+  mapLocationB: {fileID: 586110769}
+  map2Locations: {fileID: 2076503602}
   toAllow:
   - {fileID: 2087019273}
   - {fileID: 1190317011}
