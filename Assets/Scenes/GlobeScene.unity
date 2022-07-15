@@ -9109,7 +9109,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: -1
-  interval: 1
+  interval:
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
   child: {fileID: 0}
   index: 0
   toolBot: {fileID: 153620236}
@@ -11003,7 +11011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: -1
   child: {fileID: 0}
-  interval: 0.5
+  interval: 0
 --- !u!1 &1227031524
 GameObject:
   m_ObjectHideFlags: 0
@@ -11274,7 +11282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1243988839
 Transform:
   m_ObjectHideFlags: 0
@@ -14072,7 +14080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: -1
-  interval: 0.5
+  interval: []
   child: {fileID: 0}
   index: 0
   toolBot: {fileID: 153620236}
@@ -14613,7 +14621,7 @@ MonoBehaviour:
   goalEs:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
-  - {x: -30, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   goalDs:
   - {x: 0, y: 0, z: -45}
   - {x: 0, y: 0, z: -10}
