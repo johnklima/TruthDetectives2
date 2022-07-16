@@ -7,8 +7,7 @@ public class DialogContentManager : MonoBehaviour
     public float timer = -1;
     public float[] interval;
     public Transform child;
-    public int index = 0;
-    public Transform toolBot;
+    public int index = 0;    
     public int pauseIndex = 2; 
 
     private void Awake()
@@ -41,13 +40,7 @@ public class DialogContentManager : MonoBehaviour
             if (index == pauseIndex)
             {
                 
-                //this happens only occasionally
-                if (toolBot)
-                {
-                    toolBot.gameObject.SetActive(true);
-                    toolBot = null;
-                }
-                
+
 
                 timer = -1; //pause
                 return;

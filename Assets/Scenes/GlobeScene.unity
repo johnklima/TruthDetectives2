@@ -2785,8 +2785,9 @@ GameObject:
   - component: {fileID: 258604587}
   - component: {fileID: 258604586}
   - component: {fileID: 258604588}
+  - component: {fileID: 258604589}
   m_Layer: 5
-  m_Name: Ben 1
+  m_Name: Ben 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2880,6 +2881,21 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!114 &258604589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258604584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec77189b660b2b549ad5a29e24fa91fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toActivate:
+  - {fileID: 153620235}
+  delay: 1
 --- !u!1 &258780776
 GameObject:
   m_ObjectHideFlags: 0
@@ -9284,10 +9300,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: -1
-  interval: 1
+  interval:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
   child: {fileID: 0}
   index: 0
-  toolBot: {fileID: 153620236}
   pauseIndex: 4
 --- !u!114 &988046965
 MonoBehaviour:
@@ -12622,7 +12645,7 @@ GameObject:
   - component: {fileID: 1368472835}
   - component: {fileID: 1368472837}
   m_Layer: 5
-  m_Name: Nisreen 1
+  m_Name: Nisreen 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14250,10 +14273,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: -1
-  interval: 0.5
+  interval: []
   child: {fileID: 0}
   index: 0
-  toolBot: {fileID: 153620236}
   pauseIndex: 6
 --- !u!1 &1640697862
 GameObject:
