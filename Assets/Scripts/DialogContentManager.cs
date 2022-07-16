@@ -34,12 +34,13 @@ public class DialogContentManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float rnd = Random.Range(0, interval[index] * 0.5f);
-        if (Time.time - timer > (interval[index] + rnd) && timer > 0)
+        
+        if (Time.time - timer > (interval[index] ) && timer > 0)
         {
+            Debug.Log("index " + index);
+            Debug.Log("interval " + interval[index]);
             if (index == pauseIndex)
-            {
-                
+            {               
 
 
                 timer = -1; //pause

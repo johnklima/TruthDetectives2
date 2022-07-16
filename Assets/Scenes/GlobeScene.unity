@@ -1200,7 +1200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toActivate:
   - {fileID: 291115217}
-  delay: 0.5
+  delay:
+  - 1
 --- !u!114 &104063507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2894,8 +2895,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toActivate:
+  - {fileID: 763183819}
   - {fileID: 153620235}
-  delay: 1
+  delay:
+  - 1
+  - 1
 --- !u!1 &258780776
 GameObject:
   m_ObjectHideFlags: 0
@@ -5770,7 +5774,12 @@ MonoBehaviour:
   - {fileID: 636840172}
   - {fileID: 1003852973}
   - {fileID: 1335534900}
-  delay: 0.5
+  delay:
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
 --- !u!114 &547643568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8963,18 +8972,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 763183819}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 988046964}
         m_TargetAssemblyTypeName: DialogContentManager, Assembly-CSharp
         m_MethodName: KickOffTimer
@@ -11483,7 +11480,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243988838}
-  m_LocalRotation: {x: -0.1387541, y: -0.3139243, z: 0.40912953, w: 0.8454655}
+  m_LocalRotation: {x: 0.12497249, y: 0.30425134, z: -0.42499226, w: -0.8433236}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -14273,7 +14270,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: -1
-  interval: []
+  interval:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
   child: {fileID: 0}
   index: 0
   pauseIndex: 6

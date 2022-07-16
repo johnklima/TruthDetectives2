@@ -9,8 +9,10 @@ public class GenericActivate : MonoBehaviour
     //nice thing about start, it is called when ever the GameObject is activated,
     //such that we can activate other game objects in response.
 
-    public float delay = 0.5f;
+    //pre-allocate array to avoid errors, now that it is an array and not a single value
+    public float[] delay = { 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f } ;
     float timer = -1;
+    private int index = 0;
 
     void Start()
     {
@@ -19,16 +21,22 @@ public class GenericActivate : MonoBehaviour
     }
     private void Update()
     {
-        if (Time.time - timer > delay && timer > 0 )
+        if (Time.time - timer > delay[index] && timer > 0 )
         {
-            foreach (GameObject obj in toActivate)
-            {
-                obj.SetActive(true);
 
+            GameObject obj = toActivate[index];
+            obj.SetActive(true);
+
+            index++;
+
+            if(index == toActivate.Length)
+            {
+                timer = -1;
+                this.enabled = false;
             }
-            timer = -1;
-            //maybe...
-            this.enabled = false;
+            else
+                timer = Time.time;
+            
         }
         
     }
