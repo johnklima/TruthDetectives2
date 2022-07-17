@@ -2898,8 +2898,8 @@ MonoBehaviour:
   - {fileID: 763183819}
   - {fileID: 153620235}
   delay:
-  - 1
-  - 1
+  - 1.75
+  - 0
 --- !u!1 &258780776
 GameObject:
   m_ObjectHideFlags: 0
@@ -9296,19 +9296,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df384898cf88624cae9e0085a92d6f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: -1
+  timer: 1
   interval:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  - 0.2
+  - 0.2
+  - 0.5
+  - 1.7
+  - 0
+  - 0
+  - 0
+  - 0
   child: {fileID: 0}
   index: 0
-  pauseIndex: 4
+  pauseIndex: 2
 --- !u!114 &988046965
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class DialogContentManager : MonoBehaviour
 {
-    public float timer = -1;
+    public float timer = 1;
     public float[] interval;
     public Transform child;
     public int index = 0;    
-    public int pauseIndex = 2; 
+    public int pauseIndex = 1; 
 
     private void Awake()
     {
@@ -43,7 +43,7 @@ public class DialogContentManager : MonoBehaviour
             {               
 
 
-                timer = -1; //pause
+                timer = 1; //pause
                 return;
             }
 
@@ -59,7 +59,7 @@ public class DialogContentManager : MonoBehaviour
             }            
             else
             {
-                timer = -1; //end of list
+                timer = 1; //end of list
             }
                 
         }
