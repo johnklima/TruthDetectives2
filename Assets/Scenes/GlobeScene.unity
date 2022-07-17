@@ -1200,8 +1200,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toActivate:
   - {fileID: 291115217}
+  - {fileID: 1866546360}
+  - {fileID: 636840172}
+  - {fileID: 1003852973}
+  - {fileID: 1335534900}
   delay:
-  - 1
+  - 1.25
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!114 &104063507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5770,16 +5778,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toActivate:
   - {fileID: 10147277}
-  - {fileID: 1866546360}
-  - {fileID: 636840172}
-  - {fileID: 1003852973}
-  - {fileID: 1335534900}
   delay:
-  - 0.2
-  - 0.2
-  - 0.2
-  - 0.2
-  - 0.2
+  - 0.7
 --- !u!114 &547643568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9302,8 +9302,8 @@ MonoBehaviour:
   - 0.2
   - 0.5
   - 1.7
-  - 0
-  - 0
+  - 1.75
+  - 3.5
   - 0
   - 0
   child: {fileID: 0}
