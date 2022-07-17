@@ -17,6 +17,7 @@ public class markerA : MonoBehaviour
     public GameObject mapLocationA;            // changed by Raphael
     public GameObject mapLocationB;             // changed by Raphael
     public GameObject map2Locations;             // changed by Raphael
+    public GameObject toolBot6;                 // RFL
 
     public Rotator[] toAllow;
     // Start is called before the first frame update
@@ -56,6 +57,7 @@ public class markerA : MonoBehaviour
                     mapLocationA.SetActive(true);  // Raphael
                     mapLocationB.SetActive(false);   // Raphael
                     map2Locations.SetActive(false); // Raphael
+                    toolBot6.SetActive(false);      // RFL
 
                     
                     //this needs to be better resolved
