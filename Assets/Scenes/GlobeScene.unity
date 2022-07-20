@@ -1222,6 +1222,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
+  timer: -1
 --- !u!114 &104063507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3194,6 +3195,7 @@ MonoBehaviour:
   delay:
   - 1.75
   - 0
+  timer: -1
 --- !u!1 &258780776
 GameObject:
   m_ObjectHideFlags: 0
@@ -3438,6 +3440,7 @@ MonoBehaviour:
   - 1.2
   - 0.75
   - 0.75
+  timer: -1
 --- !u!1 &289446977
 GameObject:
   m_ObjectHideFlags: 0
@@ -6086,6 +6089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toActivate: []
   delay: []
+  timer: -1
 --- !u!114 &547643568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6516,6 +6520,7 @@ MonoBehaviour:
   - {fileID: 111002470}
   delay:
   - 5
+  timer: -1
 --- !u!1 &604189643
 GameObject:
   m_ObjectHideFlags: 0
