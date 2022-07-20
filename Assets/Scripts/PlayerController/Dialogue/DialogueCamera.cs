@@ -17,7 +17,8 @@ public class DialogueCamera : MonoBehaviour
 {
     public GlobalState global;
     public bool Done = false;
-
+    public GameObject closebutton;
+    
     [Header("Grab A Reference Of DiaCamera")]
     public GameObject playerDiaCamOBJ = null;
 
@@ -107,6 +108,7 @@ public class DialogueCamera : MonoBehaviour
         bInDialogue = false;
         
         this.enabled = false; //does not completely disable, why we need a "Done"
+        
         Done = true;
     }
 
@@ -119,6 +121,7 @@ public class DialogueCamera : MonoBehaviour
         {
             EnableDialogueCamera();
             bInDialogue = true;
+            closebutton.SetActive(true);
         }
     }
 
