@@ -59,7 +59,7 @@ public class DialogContentManager : MonoBehaviour
             }            
             else
             {
-                timer = 1; //end of list
+                timer = -1; //end of list
             }
                 
         }
