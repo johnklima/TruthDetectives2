@@ -9,19 +9,23 @@ public class GenericActivate : MonoBehaviour
     //nice thing about start, it is called when ever the GameObject is activated,
     //such that we can activate other game objects in response.
 
-    //pre-allocate array to avoid errors, now that it is an array and not a single value
-    public float[] delay = { 0.5f, 0.5f, 0.5f, 0.5f, 0.5f, 0.5f } ;
-    float timer = -1;
+    public float[] delay  ;
+    public float timer = -1;
     private int index = 0;
 
     void Start()
     {
-        timer = Time.time;
+        //ODD: had to change this to realtimeSinceStartup as you cant get
+        //time on the first frame of level load? returns 0??
+        Time.timeScale = 1.0f;
+        Debug.Log("start " + Time.realtimeSinceStartup);
+        timer = Time.realtimeSinceStartup;
 
     }
     private void Update()
     {
-        if (Time.time - timer > delay[index] && timer > 0 )
+        
+        if (timer > 0 && Time.realtimeSinceStartup - timer > delay[index]  )
         {
 
             GameObject obj = toActivate[index];

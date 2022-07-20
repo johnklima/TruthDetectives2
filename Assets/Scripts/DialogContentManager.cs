@@ -18,7 +18,7 @@ public class DialogContentManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        timer = -1;
         child = transform.GetChild(index);
     }
 
@@ -34,8 +34,8 @@ public class DialogContentManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (Time.time - timer > (interval[index] ) && timer > 0)
+        //check timer first - important on the ground level
+        if (timer > 0 && Time.time - timer > (interval[index] ))
         {
             Debug.Log("index " + index);
             Debug.Log("interval " + interval[index]);
@@ -43,7 +43,7 @@ public class DialogContentManager : MonoBehaviour
             {               
 
 
-                timer = 1; //pause
+                timer = -1; //pause
                 return;
             }
 
