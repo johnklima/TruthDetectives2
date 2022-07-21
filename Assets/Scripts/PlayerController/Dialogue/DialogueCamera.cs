@@ -84,16 +84,13 @@ public class DialogueCamera : MonoBehaviour
         if (Done)
             return;
 
-        //detach human
-        transform.GetChild(1).SetParent(null);
 
-        //detach sprite        
-        Transform sprt = transform.GetChild(0);
 
-        sprt.SetParent(null);
-        sprt.localScale = new Vector3(1.75f, 1.0f, 1.0f);
-        //use sprite? not sure
-        sprt.gameObject.SetActive(true);
+        transform.GetChild(0).gameObject.SetActive(true);
+        transform.GetChild(1).gameObject.SetActive(true);
+        transform.GetChild(0).SetParent(null);
+        transform.GetChild(0).SetParent(null);
+
 
         //increment placed    
         global.ShowVideo();
